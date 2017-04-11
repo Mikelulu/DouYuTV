@@ -1,0 +1,6 @@
+framework module Pods___TV {
+  umbrella header "Pods-斗鱼TV-umbrella.h"
+
+  export *
+  module * { export * }
+}

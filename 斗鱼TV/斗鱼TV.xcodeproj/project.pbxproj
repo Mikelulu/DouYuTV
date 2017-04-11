@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8489888F1E9B282E0000A621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489888E1E9B282E0000A621 /* AppDelegate.swift */; };
+		848988961E9B282E0000A621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848988951E9B282E0000A621 /* Assets.xcassets */; };
+		848988991E9B282E0000A621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848988971E9B282E0000A621 /* LaunchScreen.storyboard */; };
+		848988A41E9B282E0000A621 /* __TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848988A31E9B282E0000A621 /* __TVTests.swift */; };
+		848988AF1E9B282E0000A621 /* __TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848988AE1E9B282E0000A621 /* __TVUITests.swift */; };
+		FA56452A724C2D9AA9657879 /* Pods___TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848988A01E9B282E0000A621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848988831E9B282E0000A621 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8489888A1E9B282E0000A621;
+			remoteInfo = "斗鱼TV";
+		};
+		848988AB1E9B282E0000A621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848988831E9B282E0000A621 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8489888A1E9B282E0000A621;
+			remoteInfo = "斗鱼TV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EB3736028D06683DE239F3 /* Pods-斗鱼TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.debug.xcconfig"; sourceTree = "<group>"; };
+		8489888B1E9B282E0000A621 /* 斗鱼TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8489888E1E9B282E0000A621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		848988951E9B282E0000A621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848988981E9B282E0000A621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8489889A1E9B282E0000A621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8489889F1E9B282E0000A621 /* 斗鱼TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "斗鱼TVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		848988A31E9B282E0000A621 /* __TVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __TVTests.swift; sourceTree = "<group>"; };
+		848988A51E9B282E0000A621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848988AA1E9B282E0000A621 /* 斗鱼TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "斗鱼TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		848988AE1E9B282E0000A621 /* __TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __TVUITests.swift; sourceTree = "<group>"; };
+		848988B01E9B282E0000A621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848988881E9B282E0000A621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA56452A724C2D9AA9657879 /* Pods___TV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8489889C1E9B282E0000A621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848988A71E9B282E0000A621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848988821E9B282E0000A621 = {
+			isa = PBXGroup;
+			children = (
+				8489888D1E9B282E0000A621 /* 斗鱼TV */,
+				848988A21E9B282E0000A621 /* 斗鱼TVTests */,
+				848988AD1E9B282E0000A621 /* 斗鱼TVUITests */,
+				8489888C1E9B282E0000A621 /* Products */,
+				B410E58B71D3210A35CE4F6C /* Pods */,
+				A2A9D4D5B899D06BAF7BF745 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8489888C1E9B282E0000A621 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8489888B1E9B282E0000A621 /* 斗鱼TV.app */,
+				8489889F1E9B282E0000A621 /* 斗鱼TVTests.xctest */,
+				848988AA1E9B282E0000A621 /* 斗鱼TVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8489888D1E9B282E0000A621 /* 斗鱼TV */ = {
+			isa = PBXGroup;
+			children = (
+				8489888E1E9B282E0000A621 /* AppDelegate.swift */,
+				848988951E9B282E0000A621 /* Assets.xcassets */,
+				848988971E9B282E0000A621 /* LaunchScreen.storyboard */,
+				8489889A1E9B282E0000A621 /* Info.plist */,
+			);
+			path = "斗鱼TV";
+			sourceTree = "<group>";
+		};
+		848988A21E9B282E0000A621 /* 斗鱼TVTests */ = {
+			isa = PBXGroup;
+			children = (
+				848988A31E9B282E0000A621 /* __TVTests.swift */,
+				848988A51E9B282E0000A621 /* Info.plist */,
+			);
+			path = "斗鱼TVTests";
+			sourceTree = "<group>";
+		};
+		848988AD1E9B282E0000A621 /* 斗鱼TVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				848988AE1E9B282E0000A621 /* __TVUITests.swift */,
+				848988B01E9B282E0000A621 /* Info.plist */,
+			);
+			path = "斗鱼TVUITests";
+			sourceTree = "<group>";
+		};
+		A2A9D4D5B899D06BAF7BF745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B410E58B71D3210A35CE4F6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15EB3736028D06683DE239F3 /* Pods-斗鱼TV.debug.xcconfig */,
+				FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8489888A1E9B282E0000A621 /* 斗鱼TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848988B31E9B282E0000A621 /* Build configuration list for PBXNativeTarget "斗鱼TV" */;
+			buildPhases = (
+				06B921BF4A9FC886897FDD84 /* [CP] Check Pods Manifest.lock */,
+				848988871E9B282E0000A621 /* Sources */,
+				848988881E9B282E0000A621 /* Frameworks */,
+				848988891E9B282E0000A621 /* Resources */,
+				7DF5263969B5511D663A0319 /* [CP] Embed Pods Frameworks */,
+				8CE7D3F6D223AA0B7215C424 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "斗鱼TV";
+			productName = "斗鱼TV";
+			productReference = 8489888B1E9B282E0000A621 /* 斗鱼TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8489889E1E9B282E0000A621 /* 斗鱼TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848988B61E9B282E0000A621 /* Build configuration list for PBXNativeTarget "斗鱼TVTests" */;
+			buildPhases = (
+				8489889B1E9B282E0000A621 /* Sources */,
+				8489889C1E9B282E0000A621 /* Frameworks */,
+				8489889D1E9B282E0000A621 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848988A11E9B282E0000A621 /* PBXTargetDependency */,
+			);
+			name = "斗鱼TVTests";
+			productName = "斗鱼TVTests";
+			productReference = 8489889F1E9B282E0000A621 /* 斗鱼TVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		848988A91E9B282E0000A621 /* 斗鱼TVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848988B91E9B282E0000A621 /* Build configuration list for PBXNativeTarget "斗鱼TVUITests" */;
+			buildPhases = (
+				848988A61E9B282E0000A621 /* Sources */,
+				848988A71E9B282E0000A621 /* Frameworks */,
+				848988A81E9B282E0000A621 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848988AC1E9B282E0000A621 /* PBXTargetDependency */,
+			);
+			name = "斗鱼TVUITests";
+			productName = "斗鱼TVUITests";
+			productReference = 848988AA1E9B282E0000A621 /* 斗鱼TVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848988831E9B282E0000A621 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LK;
+				TargetAttributes = {
+					8489888A1E9B282E0000A621 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9N5X54645B;
+						ProvisioningStyle = Automatic;
+					};
+					8489889E1E9B282E0000A621 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9N5X54645B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8489888A1E9B282E0000A621;
+					};
+					848988A91E9B282E0000A621 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9N5X54645B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8489888A1E9B282E0000A621;
+					};
+				};
+			};
+			buildConfigurationList = 848988861E9B282E0000A621 /* Build configuration list for PBXProject "斗鱼TV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 848988821E9B282E0000A621;
+			productRefGroup = 8489888C1E9B282E0000A621 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8489888A1E9B282E0000A621 /* 斗鱼TV */,
+				8489889E1E9B282E0000A621 /* 斗鱼TVTests */,
+				848988A91E9B282E0000A621 /* 斗鱼TVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848988891E9B282E0000A621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848988991E9B282E0000A621 /* LaunchScreen.storyboard in Resources */,
+				848988961E9B282E0000A621 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8489889D1E9B282E0000A621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848988A81E9B282E0000A621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06B921BF4A9FC886897FDD84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF5263969B5511D663A0319 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE7D3F6D223AA0B7215C424 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848988871E9B282E0000A621 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8489888F1E9B282E0000A621 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8489889B1E9B282E0000A621 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848988A41E9B282E0000A621 /* __TVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848988A61E9B282E0000A621 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848988AF1E9B282E0000A621 /* __TVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848988A11E9B282E0000A621 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8489888A1E9B282E0000A621 /* 斗鱼TV */;
+			targetProxy = 848988A01E9B282E0000A621 /* PBXContainerItemProxy */;
+		};
+		848988AC1E9B282E0000A621 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8489888A1E9B282E0000A621 /* 斗鱼TV */;
+			targetProxy = 848988AB1E9B282E0000A621 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		848988971E9B282E0000A621 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848988981E9B282E0000A621 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848988B11E9B282E0000A621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		848988B21E9B282E0000A621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848988B41E9B282E0000A621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EB3736028D06683DE239F3 /* Pods-斗鱼TV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9N5X54645B;
+				INFOPLIST_FILE = "斗鱼TV/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		848988B51E9B282E0000A621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9N5X54645B;
+				INFOPLIST_FILE = "斗鱼TV/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		848988B71E9B282E0000A621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9N5X54645B;
+				INFOPLIST_FILE = "斗鱼TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/斗鱼TV.app/斗鱼TV";
+			};
+			name = Debug;
+		};
+		848988B81E9B282E0000A621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9N5X54645B;
+				INFOPLIST_FILE = "斗鱼TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/斗鱼TV.app/斗鱼TV";
+			};
+			name = Release;
+		};
+		848988BA1E9B282E0000A621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9N5X54645B;
+				INFOPLIST_FILE = "斗鱼TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "斗鱼TV";
+			};
+			name = Debug;
+		};
+		848988BB1E9B282E0000A621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9N5X54645B;
+				INFOPLIST_FILE = "斗鱼TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "斗鱼TV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848988861E9B282E0000A621 /* Build configuration list for PBXProject "斗鱼TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848988B11E9B282E0000A621 /* Debug */,
+				848988B21E9B282E0000A621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848988B31E9B282E0000A621 /* Build configuration list for PBXNativeTarget "斗鱼TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848988B41E9B282E0000A621 /* Debug */,
+				848988B51E9B282E0000A621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848988B61E9B282E0000A621 /* Build configuration list for PBXNativeTarget "斗鱼TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848988B71E9B282E0000A621 /* Debug */,
+				848988B81E9B282E0000A621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848988B91E9B282E0000A621 /* Build configuration list for PBXNativeTarget "斗鱼TVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848988BA1E9B282E0000A621 /* Debug */,
+				848988BB1E9B282E0000A621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848988831E9B282E0000A621 /* Project object */;
+}

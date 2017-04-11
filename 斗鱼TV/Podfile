@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '8.0'
+
+target '斗鱼TV' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+   pod 'Alamofire'          # 网络请求
+   pod 'Kingfisher'         # 图片加载
+   pod 'SnapKit'            # 约束布局
+
+  # Pods for 斗鱼TV
+
+
+
+end

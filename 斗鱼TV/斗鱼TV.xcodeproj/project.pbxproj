@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8489888F1E9B282E0000A621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489888E1E9B282E0000A621 /* AppDelegate.swift */; };
 		848988961E9B282E0000A621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848988951E9B282E0000A621 /* Assets.xcassets */; };
 		848988991E9B282E0000A621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848988971E9B282E0000A621 /* LaunchScreen.storyboard */; };
 		848988A41E9B282E0000A621 /* __TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848988A31E9B282E0000A621 /* __TVTests.swift */; };
 		848988AF1E9B282E0000A621 /* __TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848988AE1E9B282E0000A621 /* __TVUITests.swift */; };
+		84C91AD71E9DDE19009AB45A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91ACC1E9DDE19009AB45A /* AppDelegate.swift */; };
+		84C91ADA1E9E0CD8009AB45A /* LKMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AD91E9E0CD8009AB45A /* LKMainTabBarController.swift */; };
+		84C91AE01E9E1575009AB45A /* LKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91ADF1E9E1575009AB45A /* LKNavigationController.swift */; };
+		84C91AE21E9E1583009AB45A /* LKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AE11E9E1583009AB45A /* LKBaseViewController.swift */; };
+		84C91AE41E9E1681009AB45A /* LKHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AE31E9E1681009AB45A /* LKHomeViewController.swift */; };
+		84C91AE61E9E16D9009AB45A /* LKLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AE51E9E16D9009AB45A /* LKLiveViewController.swift */; };
+		84C91AE81E9E170D009AB45A /* LKFouceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AE71E9E170D009AB45A /* LKFouceViewController.swift */; };
+		84C91AEA1E9E1734009AB45A /* LKMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AE91E9E1734009AB45A /* LKMineViewController.swift */; };
+		84C91AEC1E9E2581009AB45A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AEB1E9E2581009AB45A /* Common.swift */; };
+		84C91AEE1E9E266D009AB45A /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AED1E9E266D009AB45A /* UI+Extension.swift */; };
 		FA56452A724C2D9AA9657879 /* Pods___TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15EB3736028D06683DE239F3 /* Pods-斗鱼TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.debug.xcconfig"; sourceTree = "<group>"; };
 		8489888B1E9B282E0000A621 /* 斗鱼TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8489888E1E9B282E0000A621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848988951E9B282E0000A621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848988981E9B282E0000A621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8489889A1E9B282E0000A621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +54,16 @@
 		848988AA1E9B282E0000A621 /* 斗鱼TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "斗鱼TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848988AE1E9B282E0000A621 /* __TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __TVUITests.swift; sourceTree = "<group>"; };
 		848988B01E9B282E0000A621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C91ACC1E9DDE19009AB45A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C91AD91E9E0CD8009AB45A /* LKMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKMainTabBarController.swift; sourceTree = "<group>"; };
+		84C91ADF1E9E1575009AB45A /* LKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNavigationController.swift; sourceTree = "<group>"; };
+		84C91AE11E9E1583009AB45A /* LKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBaseViewController.swift; sourceTree = "<group>"; };
+		84C91AE31E9E1681009AB45A /* LKHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKHomeViewController.swift; sourceTree = "<group>"; };
+		84C91AE51E9E16D9009AB45A /* LKLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLiveViewController.swift; sourceTree = "<group>"; };
+		84C91AE71E9E170D009AB45A /* LKFouceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKFouceViewController.swift; sourceTree = "<group>"; };
+		84C91AE91E9E1734009AB45A /* LKMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKMineViewController.swift; sourceTree = "<group>"; };
+		84C91AEB1E9E2581009AB45A /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		84C91AED1E9E266D009AB45A /* UI+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
 		FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +118,7 @@
 		8489888D1E9B282E0000A621 /* 斗鱼TV */ = {
 			isa = PBXGroup;
 			children = (
-				8489888E1E9B282E0000A621 /* AppDelegate.swift */,
+				84C91AB51E9DDE19009AB45A /* Classes */,
 				848988951E9B282E0000A621 /* Assets.xcassets */,
 				848988971E9B282E0000A621 /* LaunchScreen.storyboard */,
 				8489889A1E9B282E0000A621 /* Info.plist */,
@@ -124,6 +142,319 @@
 				848988B01E9B282E0000A621 /* Info.plist */,
 			);
 			path = "斗鱼TVUITests";
+			sourceTree = "<group>";
+		};
+		84C91AB51E9DDE19009AB45A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84C91ABB1E9DDE19009AB45A /* Home(首页) */,
+				84C91ABF1E9DDE19009AB45A /* Live(直播) */,
+				84C91AB71E9DDE19009AB45A /* Fouce(关注) */,
+				84C91AC71E9DDE19009AB45A /* Mine(我的) */,
+				84C91ACD1E9DDE19009AB45A /* Play(播放) */,
+				84C91AC31E9DDE19009AB45A /* Main */,
+				84C91ADB1E9E1553009AB45A /* Base */,
+				84C91AB61E9DDE19009AB45A /* Category */,
+				84C91ACB1E9DDE19009AB45A /* Other */,
+				84C91AD41E9DDE19009AB45A /* Resource */,
+				84C91AD61E9DDE19009AB45A /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		84C91AB61E9DDE19009AB45A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AED1E9E266D009AB45A /* UI+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		84C91AB71E9DDE19009AB45A /* Fouce(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AB81E9DDE19009AB45A /* Controllers */,
+				84C91AB91E9DDE19009AB45A /* Models */,
+				84C91ABA1E9DDE19009AB45A /* Views */,
+			);
+			path = "Fouce(关注)";
+			sourceTree = "<group>";
+		};
+		84C91AB81E9DDE19009AB45A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AE71E9E170D009AB45A /* LKFouceViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C91AB91E9DDE19009AB45A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C91ABA1E9DDE19009AB45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C91ABB1E9DDE19009AB45A /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				84C91ABC1E9DDE19009AB45A /* Controllers */,
+				84C91ABD1E9DDE19009AB45A /* Models */,
+				84C91ABE1E9DDE19009AB45A /* Views */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		84C91ABC1E9DDE19009AB45A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AE31E9E1681009AB45A /* LKHomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C91ABD1E9DDE19009AB45A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C91ABE1E9DDE19009AB45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C91ABF1E9DDE19009AB45A /* Live(直播) */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AC01E9DDE19009AB45A /* Controllers */,
+				84C91AC11E9DDE19009AB45A /* Models */,
+				84C91AC21E9DDE19009AB45A /* Views */,
+			);
+			path = "Live(直播)";
+			sourceTree = "<group>";
+		};
+		84C91AC01E9DDE19009AB45A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AE51E9E16D9009AB45A /* LKLiveViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C91AC11E9DDE19009AB45A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C91AC21E9DDE19009AB45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C91AC31E9DDE19009AB45A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AC41E9DDE19009AB45A /* Controllers */,
+				84C91AC51E9DDE19009AB45A /* Models */,
+				84C91AC61E9DDE19009AB45A /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84C91AC41E9DDE19009AB45A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AD91E9E0CD8009AB45A /* LKMainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C91AC51E9DDE19009AB45A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C91AC61E9DDE19009AB45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C91AC71E9DDE19009AB45A /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AC81E9DDE19009AB45A /* Controllers */,
+				84C91AC91E9DDE19009AB45A /* Models */,
+				84C91ACA1E9DDE19009AB45A /* Views */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		84C91AC81E9DDE19009AB45A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AE91E9E1734009AB45A /* LKMineViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C91AC91E9DDE19009AB45A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C91ACA1E9DDE19009AB45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C91ACB1E9DDE19009AB45A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				84C91ACC1E9DDE19009AB45A /* AppDelegate.swift */,
+				84C91AEB1E9E2581009AB45A /* Common.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		84C91ACD1E9DDE19009AB45A /* Play(播放) */ = {
+			isa = PBXGroup;
+			children = (
+				84C91ACE1E9DDE19009AB45A /* Controllers */,
+				84C91ACF1E9DDE19009AB45A /* Models */,
+				84C91AD01E9DDE19009AB45A /* Views */,
+				84C91AD11E9DDE19009AB45A /* 房间列表 */,
+				84C91AD21E9DDE19009AB45A /* 设置 */,
+				84C91AD31E9DDE19009AB45A /* 频道选择 */,
+			);
+			path = "Play(播放)";
+			sourceTree = "<group>";
+		};
+		84C91ACE1E9DDE19009AB45A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C91ACF1E9DDE19009AB45A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C91AD01E9DDE19009AB45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C91AD11E9DDE19009AB45A /* 房间列表 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "房间列表";
+			sourceTree = "<group>";
+		};
+		84C91AD21E9DDE19009AB45A /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
+		84C91AD31E9DDE19009AB45A /* 频道选择 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "频道选择";
+			sourceTree = "<group>";
+		};
+		84C91AD41E9DDE19009AB45A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AD81E9E04DF009AB45A /* Libs */,
+				84C91AD51E9DDE19009AB45A /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84C91AD51E9DDE19009AB45A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		84C91AD61E9DDE19009AB45A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		84C91AD81E9E04DF009AB45A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		84C91ADB1E9E1553009AB45A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84C91ADC1E9E1553009AB45A /* Controllers */,
+				84C91ADD1E9E1553009AB45A /* Models */,
+				84C91ADE1E9E1553009AB45A /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84C91ADC1E9E1553009AB45A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C91ADF1E9E1575009AB45A /* LKNavigationController.swift */,
+				84C91AE11E9E1583009AB45A /* LKBaseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C91ADD1E9E1553009AB45A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C91ADE1E9E1553009AB45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A2A9D4D5B899D06BAF7BF745 /* Frameworks */ = {
@@ -208,6 +539,7 @@
 		848988831E9B282E0000A621 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LK;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = LK;
@@ -330,7 +662,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8489888F1E9B282E0000A621 /* AppDelegate.swift in Sources */,
+				84C91AD71E9DDE19009AB45A /* AppDelegate.swift in Sources */,
+				84C91AE41E9E1681009AB45A /* LKHomeViewController.swift in Sources */,
+				84C91AE01E9E1575009AB45A /* LKNavigationController.swift in Sources */,
+				84C91AEE1E9E266D009AB45A /* UI+Extension.swift in Sources */,
+				84C91AE21E9E1583009AB45A /* LKBaseViewController.swift in Sources */,
+				84C91AEC1E9E2581009AB45A /* Common.swift in Sources */,
+				84C91AEA1E9E1734009AB45A /* LKMineViewController.swift in Sources */,
+				84C91ADA1E9E0CD8009AB45A /* LKMainTabBarController.swift in Sources */,
+				84C91AE81E9E170D009AB45A /* LKFouceViewController.swift in Sources */,
+				84C91AE61E9E16D9009AB45A /* LKLiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

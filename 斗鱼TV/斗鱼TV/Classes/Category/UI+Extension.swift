@@ -44,7 +44,7 @@ extension UIView {
         layer.mask = maskShapLayer
     }
     
-    // MARK:-
+    // MARK:- 坐标
     public var x: CGFloat {
         get {
             return self.frame.origin.x
@@ -170,14 +170,14 @@ extension UIColor {
 extension String {
     
     // MARK: - 获取字符串的宽度
-    func getStringWidth(string: String, fontSize: CGFloat) -> CGFloat {
+    public static func getStringWidth(string: String, fontSize: CGFloat) -> CGFloat {
         
         let rect = string.boundingRect(with: CGSize.init(width: Double(MAXFLOAT), height: 10), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: fontSize)], context: nil)
         return CGFloat(ceilf(Float(rect.width)))
     }
     
     // MARK: - 获取字符串的高度
-    func getStringHeight(string: String, fontSize: CGFloat, width: CGFloat) -> CGFloat {
+     public static func getStringHeight(string: String, fontSize: CGFloat, width: CGFloat) -> CGFloat {
         
         let rect = string.boundingRect(with: CGSize.init(width: width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: fontSize)], context: nil)
         return CGFloat(ceil(Float(rect.height)))

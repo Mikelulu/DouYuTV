@@ -21,6 +21,8 @@
 		84C91AEA1E9E1734009AB45A /* LKMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AE91E9E1734009AB45A /* LKMineViewController.swift */; };
 		84C91AEC1E9E2581009AB45A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AEB1E9E2581009AB45A /* Common.swift */; };
 		84C91AEE1E9E266D009AB45A /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AED1E9E266D009AB45A /* UI+Extension.swift */; };
+		84C91AF31E9F893C009AB45A /* UIview+LKFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AF21E9F893C009AB45A /* UIview+LKFrame.swift */; };
+		84C91AF51E9F8E4A009AB45A /* LKSegmentTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */; };
 		FA56452A724C2D9AA9657879 /* Pods___TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		84C91AE91E9E1734009AB45A /* LKMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKMineViewController.swift; sourceTree = "<group>"; };
 		84C91AEB1E9E2581009AB45A /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		84C91AED1E9E266D009AB45A /* UI+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
+		84C91AF21E9F893C009AB45A /* UIview+LKFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+LKFrame.swift"; sourceTree = "<group>"; };
+		84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKSegmentTitleView.swift; sourceTree = "<group>"; };
 		FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -413,6 +417,7 @@
 		84C91AD61E9DDE19009AB45A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				84C91AF11E9F887A009AB45A /* LKSegmentView */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -455,6 +460,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		84C91AF11E9F887A009AB45A /* LKSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				84C91AF21E9F893C009AB45A /* UIview+LKFrame.swift */,
+				84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */,
+			);
+			path = LKSegmentView;
 			sourceTree = "<group>";
 		};
 		A2A9D4D5B899D06BAF7BF745 /* Frameworks */ = {
@@ -546,8 +560,7 @@
 				TargetAttributes = {
 					8489888A1E9B282E0000A621 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 9N5X54645B;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					8489889E1E9B282E0000A621 = {
 						CreatedOnToolsVersion = 8.3;
@@ -665,8 +678,10 @@
 				84C91AD71E9DDE19009AB45A /* AppDelegate.swift in Sources */,
 				84C91AE41E9E1681009AB45A /* LKHomeViewController.swift in Sources */,
 				84C91AE01E9E1575009AB45A /* LKNavigationController.swift in Sources */,
+				84C91AF31E9F893C009AB45A /* UIview+LKFrame.swift in Sources */,
 				84C91AEE1E9E266D009AB45A /* UI+Extension.swift in Sources */,
 				84C91AE21E9E1583009AB45A /* LKBaseViewController.swift in Sources */,
+				84C91AF51E9F8E4A009AB45A /* LKSegmentTitleView.swift in Sources */,
 				84C91AEC1E9E2581009AB45A /* Common.swift in Sources */,
 				84C91AEA1E9E1734009AB45A /* LKMineViewController.swift in Sources */,
 				84C91ADA1E9E0CD8009AB45A /* LKMainTabBarController.swift in Sources */,
@@ -817,12 +832,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 9N5X54645B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "斗鱼TV/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -833,12 +849,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 9N5X54645B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "斗鱼TV/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ziding.--TV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

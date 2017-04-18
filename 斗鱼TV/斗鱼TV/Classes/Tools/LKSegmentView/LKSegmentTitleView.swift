@@ -9,54 +9,104 @@
 import UIKit
 
 /** 标题文字大小 */
-let LKSegmentTitleViewTextFont: CGFloat = 16
+fileprivate let LKSegmentTitleViewTextFont: CGFloat = 16
 /** 按钮之间的间距 */
-let LKSegmentTitleViewBtnMargin: CGFloat = 20
+fileprivate let LKSegmentTitleViewBtnMargin: CGFloat = 20
 /** 指示器的高度 */
-let LKIndicatorHeight: CGFloat = 2
+fileprivate let LKIndicatorHeight: CGFloat = 2
 /** 指示器的动画移动时间 */
-let LKIndicatorAnimationTime: TimeInterval = 0.1
-
+fileprivate let LKIndicatorAnimationTime: TimeInterval = 0.1
 
 enum LKIndicatorType {
     case LKIndicatorTypeDefault /// 指示器默认长度与按钮宽度相等
     case LKIndicatorTypeEqual   /// 指示器宽度等于按钮文字宽度
 }
-class LKSegmentTitleView: UIView {
 
-    /** 标题数组 */
-    let titleArr: Array<String>
-    /** button数组 */
-    lazy var btnArr: Array = [UIButton]()
+//LKSegmentTitleViewDelegate
+protocol LKSegmentTitleViewDelegate: NSObjectProtocol {
     
+    func segmentTitleView(segmentTitleView: LKSegmentTitleView,selectedIndex: Int)
+}
+
+class LKSegmentTitleView: UIView {
     
-    /** 记录所有按钮文字宽度 */
-    var allBtnTextWidth: CGFloat = 0
-    /** 记录所有子控件的宽度*/
-    var allBtnWidth: CGFloat = 0
-    
-    /** 选中按钮的下标*/
-    var currentIndex: Int = 0
-    /** tempBtn*/
-    var tempBtn: UIButton?
+    /** 选中的按钮下标 */
+    var selectedIndex: Int = 0 {
+        didSet {
+            self.btnClicked(btnArr[selectedIndex])
+        }
+    }
     
     /** 指示器样式 */
     var indicatorStyle: LKIndicatorType = .LKIndicatorTypeDefault {
         didSet {
             switch indicatorStyle {
             case .LKIndicatorTypeEqual:
-           
-                let selectedBtn: UIButton = self.btnArr.first!
-                self.indicatorView.LK_width = String.getStringWidth(string: self.titleArr[0], fontSize: LKSegmentTitleViewTextFont)
+                
+                let selectedBtn: UIButton = self.btnArr[selectedIndex]
+                self.indicatorView.LK_width = String.getStringWidth(string: self.titleArr[selectedIndex], fontSize: LKSegmentTitleViewTextFont)
                 self.indicatorView.LK_centerX = selectedBtn.LK_centerX
+               
             default:
                 LKLog("LKIndicatorTypeDefault")
             }
         }
     }
     
+    
+     /** 代理 */
+    weak var delegate: LKSegmentTitleViewDelegate?
+    
+     /** 定义闭包回调 */
+//    var btnSelectBlock: ((_ segmentTitleView: LKSegmentTitleView,_ selectedIndex: Int) -> ())?
+    
+    /** 使用typealias关键字定义闭包回调 */
+    typealias funcBlock = (_ segmentTitleView: LKSegmentTitleView,_ selectedIndex: Int) -> ()
+    var btnSelectBlock: funcBlock?
+    
+    /** 是否需要弹性效果，默认为 YES */
+    var isNeedBounces: Bool = true {
+        didSet {
+            self.scrollView.bounces = isNeedBounces
+        }
+    }
+    /** 是否显示指示器，默认为 YES */
+    var isShowIndicator: Bool = true {
+        didSet {
+            if !isShowIndicator  {
+               self.indicatorView.removeFromSuperview()
+            }
+        }
+    }
+    /** 是否让标题有渐变效果，默认为 YES */
+    var isTitleGradientEffect: Bool = true {
+        didSet {
+            
+        }
+    }
+    
+    
+    
+    
+    /** 标题数组 */
+    fileprivate let titleArr: Array<String>
+    /** 用来存储button的数组 */
+    fileprivate lazy var btnArr: Array = [UIButton]()
+    
+    
+    /** 记录所有按钮文字宽度 */
+    fileprivate var allBtnTextWidth: CGFloat = 0
+    /** 记录所有子控件的宽度*/
+    fileprivate var allBtnWidth: CGFloat = 0
+    
+    /** 选中按钮的下标*/
+    fileprivate var currentIndex: Int = 0
+    /** tempBtn*/
+    fileprivate var tempBtn: UIButton?
+    
+    
     /** 标题scrollView */
-    lazy var scrollView: UIScrollView = {
+    fileprivate lazy var scrollView: UIScrollView = {
         let scroll:UIScrollView = UIScrollView(frame: self.bounds)
         scroll.showsHorizontalScrollIndicator = false
         scroll.showsVerticalScrollIndicator = false
@@ -66,7 +116,7 @@ class LKSegmentTitleView: UIView {
     }()
     
      /** 指示器 */
-    lazy var indicatorView: UIView = {
+    fileprivate lazy var indicatorView: UIView = {
         let indicator: UIView = UIView()
         indicator.backgroundColor = kSelectColor
         return indicator
@@ -166,8 +216,8 @@ extension LKSegmentTitleView {
                 let btn: UIButton = UIButton.init(type: .custom)
                 //设置frame
                 let btnW: CGFloat = String.getStringWidth(string: self.titleArr[index], fontSize: LKSegmentTitleViewTextFont) + LKSegmentTitleViewBtnMargin
-                btnX = btnX + btnW
                 btn.frame = CGRect(x: btnX, y: btnY, width: btnW, height: btnH)
+                btnX = btnX + btnW
                 btn.tag = index
                 
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: LKSegmentTitleViewTextFont)
@@ -205,6 +255,72 @@ extension LKSegmentTitleView {
         
         self.scrollView.addSubview(self.indicatorView)
         self.indicatorView.frame = CGRect(x: firstBtn.LK_x, y: self.LK_height - LKIndicatorHeight, width: firstBtn.LK_width, height: LKIndicatorHeight)
+    }
+    
+    open func setSegmentSelectedBtn(progress: CGFloat,originalIndex: Int,targetIndex: Int) -> Void {
+        // 1、取出 originalBtn／targetBtn
+        let originalBtn: UIButton = btnArr[originalIndex]
+        let targetBtn: UIButton = btnArr[targetIndex]
+        
+        // 2、改变按钮的选择状态
+        if progress == 1.0 {
+            self.changeSelectedButton(targetBtn)
+        }
+        
+        // 3、 滚动标题选中居中
+        self.selectedBtnCenter(targetBtn)
+        
+        // 4、处理指示器
+        if (self.allBtnWidth <= self.bounds.size.width) {
+            //不可滚动
+            /// 计算 targetBtn／originalBtn 之间的距离
+            let targetBtnX: CGFloat = targetBtn.frame.maxX - 0.5 * (self.LK_width / (CGFloat)(titleArr.count) - String.getStringWidth(string: targetBtn.currentTitle!, fontSize: LKSegmentTitleViewTextFont)) - String.getStringWidth(string: targetBtn.currentTitle!, fontSize: LKSegmentTitleViewTextFont)
+            
+            let originalBtnX: CGFloat = originalBtn.frame.maxX - 0.5 * (self.LK_width / (CGFloat)(titleArr.count) - String.getStringWidth(string: originalBtn.currentTitle!, fontSize: LKSegmentTitleViewTextFont)) - String.getStringWidth(string: targetBtn.currentTitle!, fontSize: LKSegmentTitleViewTextFont)
+            
+            let totalOffsetX: CGFloat = targetBtnX - originalBtnX
+            
+            
+            if indicatorStyle == .LKIndicatorTypeEqual {
+                /// 计算 indicatorView 滚动时 X 的偏移量
+                let offsetX: CGFloat = totalOffsetX * progress
+                var temp: CGRect = self.indicatorView.frame
+                temp.origin.x = originalBtnX + offsetX
+                temp.size.width = String.getStringWidth(string: originalBtn.currentTitle!, fontSize: LKSegmentTitleViewTextFont)
+                self.indicatorView.frame = temp
+            }else {
+                let moveTotalX: CGFloat = targetBtn.LK_origin.x - originalBtn.LK_origin.x
+                let moveX: CGFloat = moveTotalX * progress
+                self.indicatorView.LK_centerX = originalBtn.LK_centerX + moveX
+            }
+            
+        }else {
+            //可以滚动
+            /// 计算 targetBtn／originalBtn 之间的距离
+            let totalOffsetX: CGFloat = targetBtn.LK_origin.x - originalBtn.LK_origin.x
+            /// 计算 indicatorView 滚动时 X 的偏移量
+            var offsetX: CGFloat?
+            /// 计算 targetBtn／originalBtn 宽度的差值
+            let totalDistance: CGFloat = targetBtn.frame.maxX - originalBtn.frame.maxX
+            /// 计算 indicatorView 滚动时宽度的偏移量
+            var distance: CGFloat?
+            
+            if indicatorStyle == .LKIndicatorTypeEqual {
+                offsetX = totalOffsetX * progress + 0.5 * LKSegmentTitleViewBtnMargin
+                distance = progress * (totalDistance - totalOffsetX) - LKSegmentTitleViewBtnMargin
+            }else {
+                offsetX = totalOffsetX * progress
+                distance = progress * (totalDistance - totalOffsetX)
+            }
+            
+            /// 计算 indicatorView 新的 frame
+            var temp: CGRect = indicatorView.frame
+            temp.origin.x = originalBtn.LK_origin.x + offsetX!
+            temp.size.width = originalBtn.LK_width + distance!
+            indicatorView.frame = temp
+        }
+        ///记录最新的 index
+        self.currentIndex = targetIndex;
     }
 }
 
@@ -245,10 +361,23 @@ extension LKSegmentTitleView {
                 }
             }, completion: nil)
         }
+        
+        // 4、设置代理回调 && 闭包回调
+        self.delegate?.segmentTitleView(segmentTitleView: self, selectedIndex: currentIndex)
+       
+//        if (btnSelectBlock != nil) {
+//            
+//            btnSelectBlock!(self,currentIndex)
+//        }
+         btnSelectBlock?(self,currentIndex)
+        
+        
+        // 5、滚动标题选中居中
+        self.selectedBtnCenter(btn)
     }
     
     //改变按钮的选择状态
-    private func changeSelectedButton(_ btn: UIButton) {
+    fileprivate func changeSelectedButton(_ btn: UIButton) {
         
         btn.isSelected = true
         if tempBtn == nil {
@@ -257,5 +386,25 @@ extension LKSegmentTitleView {
             tempBtn?.isSelected = false
             tempBtn = btn
         }
+    }
+    
+    //滚动标题选中居中
+    fileprivate func selectedBtnCenter(_ btn: UIButton) {
+        // 计算偏移量
+        var offsetX: CGFloat = btn.center.x - self.frame.size.width * 0.5
+        
+        if offsetX < 0 {
+            offsetX = 0
+        }
+        
+        // 获取最大滚动范围
+        let maxOffsetX: CGFloat = self.scrollView.contentSize.width - self.frame.size.width
+        
+        if offsetX > maxOffsetX {
+            offsetX = maxOffsetX
+        }
+        
+        // 滚动标题滚动条
+        self.scrollView.setContentOffset(CGPoint.init(x: offsetX, y: 0), animated: true)
     }
 }

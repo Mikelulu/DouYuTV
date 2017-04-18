@@ -23,6 +23,7 @@
 		84C91AEE1E9E266D009AB45A /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AED1E9E266D009AB45A /* UI+Extension.swift */; };
 		84C91AF31E9F893C009AB45A /* UIview+LKFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AF21E9F893C009AB45A /* UIview+LKFrame.swift */; };
 		84C91AF51E9F8E4A009AB45A /* LKSegmentTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */; };
+		84CCEF601EA6201B00296EE4 /* LKSegmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEF5F1EA6201B00296EE4 /* LKSegmentContentView.swift */; };
 		FA56452A724C2D9AA9657879 /* Pods___TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		84C91AED1E9E266D009AB45A /* UI+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
 		84C91AF21E9F893C009AB45A /* UIview+LKFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+LKFrame.swift"; sourceTree = "<group>"; };
 		84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKSegmentTitleView.swift; sourceTree = "<group>"; };
+		84CCEF5F1EA6201B00296EE4 /* LKSegmentContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKSegmentContentView.swift; sourceTree = "<group>"; };
 		FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -467,6 +469,7 @@
 			children = (
 				84C91AF21E9F893C009AB45A /* UIview+LKFrame.swift */,
 				84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */,
+				84CCEF5F1EA6201B00296EE4 /* LKSegmentContentView.swift */,
 			);
 			path = LKSegmentView;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 			files = (
 				84C91AD71E9DDE19009AB45A /* AppDelegate.swift in Sources */,
 				84C91AE41E9E1681009AB45A /* LKHomeViewController.swift in Sources */,
+				84CCEF601EA6201B00296EE4 /* LKSegmentContentView.swift in Sources */,
 				84C91AE01E9E1575009AB45A /* LKNavigationController.swift in Sources */,
 				84C91AF31E9F893C009AB45A /* UIview+LKFrame.swift in Sources */,
 				84C91AEE1E9E266D009AB45A /* UI+Extension.swift in Sources */,

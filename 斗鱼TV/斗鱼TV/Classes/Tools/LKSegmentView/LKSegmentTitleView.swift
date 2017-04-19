@@ -263,9 +263,9 @@ extension LKSegmentTitleView {
         let targetBtn: UIButton = btnArr[targetIndex]
         
         // 2、改变按钮的选择状态
-        if progress == 1.0 {
+//        if progress == 1.0 {
             self.changeSelectedButton(targetBtn)
-        }
+//        }
         
         // 3、 滚动标题选中居中
         self.selectedBtnCenter(targetBtn)
@@ -319,6 +319,9 @@ extension LKSegmentTitleView {
             temp.size.width = originalBtn.LK_width + distance!
             indicatorView.frame = temp
         }
+        
+//        originalBtn.titleLabel?.textColor = kNormalColor
+//        targetBtn.titleLabel?.textColor = kSelectColor
         ///记录最新的 index
         self.currentIndex = targetIndex;
     }

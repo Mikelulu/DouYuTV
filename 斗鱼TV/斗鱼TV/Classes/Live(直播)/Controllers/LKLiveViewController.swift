@@ -16,5 +16,13 @@ class LKLiveViewController: LKBaseViewController {
         navigationItem.title = "直播"
     }
 
-   
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.navigationController?.pushViewController(LKFouceViewController(), animated: true)
+    }
+    deinit {
+       LKLog("释放")
+    }
+    
+    
 }
+

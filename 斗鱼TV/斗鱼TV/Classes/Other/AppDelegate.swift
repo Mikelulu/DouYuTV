@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //休眠2秒（增加启动页停留时间）
-        Thread.sleep(forTimeInterval: 2)
+//        Thread.sleep(forTimeInterval: 2)
         
         //设置跟控制器
         self.setRootController()

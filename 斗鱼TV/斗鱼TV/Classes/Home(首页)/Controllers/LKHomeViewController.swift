@@ -13,22 +13,14 @@ class LKHomeViewController: LKBaseViewController {
     fileprivate var segmentTitleView: LKSegmentTitleView!
     fileprivate var segmentContentView: LKSegmentContentView!
     
-    fileprivate var titleArr = [String]()
-    fileprivate var childArr = [UIViewController]()
+    fileprivate let titleArr = ["推荐","游戏","娱乐","趣玩"]
+    fileprivate let childArr = [LKRecommendViewController(),LKGameViewController(),LKEntainmentViewController(),LKFunToPlayViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "首页";
+//        navigationItem.title = "首页";
         
-        titleArr = ["精选","电影","电视剧","综艺", "NBA", "娱乐", "动漫", "演唱会"]
-        
-        for _ in 0..<titleArr.count {
-            let vc: UIViewController = UIViewController()
-            vc.view.backgroundColor = UIColor(red: (CGFloat)(arc4random_uniform(255)) / 255.0, green: (CGFloat)(arc4random_uniform(255)) / 255.0, blue: (CGFloat)(arc4random_uniform(255)) / 255.0, alpha: 1.0)
-            self.addChildViewController(vc)
-            childArr.append(vc)
-        }
         self.setUp()
     }
 }
@@ -41,7 +33,8 @@ extension LKHomeViewController {
         view.addSubview(segmentTitleView)
         segmentTitleView.selectedIndex = 0
         segmentTitleView.delegate = self
-        
+        segmentTitleView.backgroundColor = UIColor.white
+            
         ///segmentContentView
         segmentContentView = LKSegmentContentView(frame: CGRect.init(x: 0, y: 44, width: self.view.frame.size.width, height: self.view.frame.size.height - 44), parentVC: self, childVCs: childArr)
         segmentContentView.delegate = self
@@ -52,7 +45,7 @@ extension LKHomeViewController {
 extension LKHomeViewController: LKSegmentTitleViewDelegate,LKSegmentContentViewDelegare {
     
     func segmentTitleView(segmentTitleView: LKSegmentTitleView, selectedIndex: Int) {
-        LKLog(selectedIndex)
+//        LKLog(selectedIndex)
         
         segmentContentView.setSegmentContentView(currentIndex: selectedIndex)
     }

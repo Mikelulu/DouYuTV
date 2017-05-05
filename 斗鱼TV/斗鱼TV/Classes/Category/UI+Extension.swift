@@ -166,7 +166,7 @@ extension UIColor {
     }
 }
 
-// MARK: - String的分类
+// MARK: - String的分类（结构体类型）
 extension String {
     
     // MARK: - 获取字符串的宽度
@@ -182,4 +182,82 @@ extension String {
         let rect = string.boundingRect(with: CGSize.init(width: width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: fontSize)], context: nil)
         return CGFloat(ceil(Float(rect.height)))
     }
+    
+    /// 返回当前时间的时间戳
+    static func getCurrentTimeSemp() -> String {
+      
+        let date: Date = Date.init(timeIntervalSinceNow: 0)
+        let timeSemp: TimeInterval = date.timeIntervalSince1970
+        
+        return String.init(format: "%.0f", timeSemp)
+    }
+}
+
+
+/// 图片在上 文字在下
+class LKButton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        titleLabel?.textAlignment = .center
+        titleLabel?.font = UIFont.systemFont(ofSize: 11.0)
+        self.setTitleColor(UIColor.gray, for: .normal)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        /// 修改图片位置
+        imageView?.width = self.width * 0.7
+        imageView?.height = (imageView?.width)!
+        imageView?.x = (self.width - (imageView?.width)!) / 2
+        imageView?.y = 0
+        
+        /// 修好标题的位置
+        titleLabel?.width = self.width
+        titleLabel?.height = self.height - (imageView?.height)!
+        titleLabel?.x = 0
+        titleLabel?.y = (imageView?.height)!
+        
+        imageView?.layer.cornerRadius = (imageView?.width)! / 2
+        imageView?.layer.masksToBounds = true
+        imageView?.backgroundColor = UIColor.red
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+}
+/// 图片在you 文字在zuo
+class LKRightButton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        titleLabel?.textAlignment = .right
+        titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
+        self.setTitleColor(UIColor.gray, for: .normal)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.titleLabel?.x = 0;
+        self.titleLabel?.width = self.width * 0.7;
+        self.titleLabel?.y = 0;
+        self.titleLabel?.height = self.height;
+        
+        self.imageView?.x = (self.titleLabel?.width)!;
+        self.imageView?.y = 0;
+        self.imageView?.width = self.width - (self.imageView?.x)!;
+        self.imageView?.height = self.height;
+        
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
 }

@@ -48,4 +48,19 @@ class LKRoomGroup: NSObject {
 
 class LKRoomModel: NSObject {
     
+    var room_src: String
+    var room_name: String
+    var nickname: String
+    var online: Int
+    
+    var room_id: String
+    
+    init(dic: JSON) {
+        self.room_src = dic["room_src"].stringValue
+        self.room_name = dic["room_name"].stringValue
+        self.nickname = dic["nickname"].stringValue
+        self.online = dic["online"].intValue
+        
+        self.room_id = dic["room_id"].stringValue
+    }
 }

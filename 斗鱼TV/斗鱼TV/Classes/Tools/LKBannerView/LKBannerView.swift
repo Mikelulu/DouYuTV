@@ -97,6 +97,8 @@ class LKBannerView: UIView {
     var hidesForSinglePage: Bool = true
     
     
+    var didSelectBlock: (() -> ())?
+    
     // MARK: -- liftCycle
     override init(frame: CGRect) {
         
@@ -274,8 +276,7 @@ extension LKBannerView: UICollectionViewDelegate,UICollectionViewDataSource {
         
         if !onlyDisplayText {
             
-            cell.imageView.kf.setImage(with: URL.init(string: model.pic_url))
-            
+            cell.imageView.kf.setImage(with: URL.init(string: model.pic_url), placeholder:UIImage.init(named: "live_cell_default_phone_103x103_") , options: nil, progressBlock: nil, completionHandler: nil)
         }
         
         if (titlesGroup != nil) && itemIndex < (titlesGroup?.count)! {
@@ -300,6 +301,9 @@ extension LKBannerView: UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        if self.didSelectBlock != nil {
+            self.didSelectBlock!()
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

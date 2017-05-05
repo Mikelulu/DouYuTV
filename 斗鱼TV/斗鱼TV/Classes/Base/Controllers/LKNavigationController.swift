@@ -21,8 +21,22 @@ class LKNavigationController: UINavigationController {
         
         
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : kNormalColor]
+        
+        
+        UINavigationBar.appearance().tintColor = kSelectColor
     }
 
-   
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        
+        if self.viewControllers.count > 0 {
+            
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        
+       viewController.navigationItem.backBarButtonItem  = UIBarButtonItem(title: "返回", style: .plain, target: self, action: nil)
+        
+        
+        super.pushViewController(viewController, animated: true)
+    }
 
 }

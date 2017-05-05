@@ -15,6 +15,14 @@ let headerViewH: CGFloat = 260
 
 class LKRecommendViewController: LKBaseViewController {
 
+    var bannerView: LKBannerView!
+    var scroll: LKRScorllView!
+    
+    // 头视图
+    var roomGroups = [LKRoomGroup]()
+    /// 房间数组
+    var roomArr = [LKRoomModel]()
+    
     
     /// tableView
     lazy var tableView: UITableView = {
@@ -29,8 +37,6 @@ class LKRecommendViewController: LKBaseViewController {
         return table
     }()
     
-     var bannerView: LKBannerView!
-     var scroll: LKRScorllView!
     
     
     /// headerView
@@ -50,7 +56,7 @@ class LKRecommendViewController: LKBaseViewController {
     }()
     
     
-    var roomGroups = [LKRoomGroup]()
+    
     
 
     
@@ -66,6 +72,11 @@ class LKRecommendViewController: LKBaseViewController {
         tableView.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(self.view)
             make.height.equalTo(kScreenH - 64 - 49 - 44)
+        }
+        
+        self.bannerView.didSelectBlock = { [unowned self] () -> () in
+            
+            self.navigationController?.pushViewController(LKPlayViewController(), animated: true)
         }
     }
 
@@ -225,6 +236,18 @@ extension LKRecommendViewController {
                 if response != nil {
                     LKLog("collection数据完成")
                     LKLog(response)
+                   
+                    // 元祖 遍历数组
+                    for (index,subJson): (String,JSON) in response!["data"] {
+                        
+                        let model: LKRoomModel = LKRoomModel(dic: subJson)
+                        
+                        if Int(index)! < 8{
+                            self.roomArr.append(model);
+                        }
+                        
+                    
+                    }
                 }
                 
                 ///异步任务结束后调用
@@ -235,6 +258,8 @@ extension LKRecommendViewController {
         group.notify(queue: DispatchQueue.main) {
 //            sleep(3)
             LKLog("回到主线程刷新数据")
+            
+            self.tableView.reloadData()
         }
     }
 }
@@ -252,17 +277,25 @@ extension LKRecommendViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cellID")
+        var cell: LKRecommendCell? = tableView.dequeueReusableCell(withIdentifier: "cellID") as? LKRecommendCell
         
         if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cellID")
+            cell = LKRecommendCell(style: .default, reuseIdentifier: "cellID")
         }
+        cell?.roomArr = self.roomArr
+        
+        cell?.didSeclectBlock = { [unowned self] (roomId) -> () in
+            
+            /// 直播间
+            self.navigationController?.pushViewController(LKPlayViewController(), animated: true)
+        }
+       
         return cell!
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
+        return kRecommendItemHeight * 4 + kMargin * 4
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

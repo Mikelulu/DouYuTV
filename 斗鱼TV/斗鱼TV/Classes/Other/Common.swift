@@ -55,6 +55,14 @@ let kSelectColor = RGB(247, 90, 0)
 
 let kNormalColor = UIColor.hexInt(0x666666)
 
+
+let kMargin: CGFloat = 10
+
+let kRecommendItemWith: CGFloat = (kScreenW - 3 * kMargin) / 2
+
+let kRecommendItemHeight: CGFloat = 110
+
+
 // MARK:- 自定义打印方法
 func LKLog<T>(_ message : T, file : String = #file, funcName : String = #function, lineNum : Int = #line) {
     

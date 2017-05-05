@@ -48,6 +48,9 @@
 		84C91AF51E9F8E4A009AB45A /* LKSegmentTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */; };
 		84CCEF601EA6201B00296EE4 /* LKSegmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEF5F1EA6201B00296EE4 /* LKSegmentContentView.swift */; };
 		84D88BCD1EB1DB71005B0756 /* LKHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D88BCC1EB1DB71005B0756 /* LKHomeModel.swift */; };
+		84F318111EBC4D6D00239770 /* LKRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F318101EBC4D6D00239770 /* LKRecommendCell.swift */; };
+		84F318131EBC500100239770 /* LKRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F318121EBC500100239770 /* LKRCollectionViewCell.swift */; };
+		84F318151EBC7BF000239770 /* LKPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F318141EBC7BF000239770 /* LKPlayViewController.swift */; };
 		FA56452A724C2D9AA9657879 /* Pods___TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +121,9 @@
 		84C91AF41E9F8E4A009AB45A /* LKSegmentTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKSegmentTitleView.swift; sourceTree = "<group>"; };
 		84CCEF5F1EA6201B00296EE4 /* LKSegmentContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKSegmentContentView.swift; sourceTree = "<group>"; };
 		84D88BCC1EB1DB71005B0756 /* LKHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKHomeModel.swift; sourceTree = "<group>"; };
+		84F318101EBC4D6D00239770 /* LKRecommendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKRecommendCell.swift; sourceTree = "<group>"; };
+		84F318121EBC500100239770 /* LKRCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKRCollectionViewCell.swift; sourceTree = "<group>"; };
+		84F318141EBC7BF000239770 /* LKPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPlayViewController.swift; sourceTree = "<group>"; };
 		FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +211,8 @@
 				841C42FC1EAE0B74001D0C99 /* LKRecommendViewController.swift */,
 				842508811EB9ABC600C11052 /* LKRScorllView.swift */,
 				842508851EB9E18C00C11052 /* LKHeaderView.swift */,
+				84F318101EBC4D6D00239770 /* LKRecommendCell.swift */,
+				84F318121EBC500100239770 /* LKRCollectionViewCell.swift */,
 			);
 			path = "推荐";
 			sourceTree = "<group>";
@@ -502,6 +510,7 @@
 		84C91ACE1E9DDE19009AB45A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84F318141EBC7BF000239770 /* LKPlayViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -835,6 +844,7 @@
 				84C91AD71E9DDE19009AB45A /* AppDelegate.swift in Sources */,
 				84C91AE41E9E1681009AB45A /* LKHomeViewController.swift in Sources */,
 				84CCEF601EA6201B00296EE4 /* LKSegmentContentView.swift in Sources */,
+				84F318131EBC500100239770 /* LKRCollectionViewCell.swift in Sources */,
 				842508821EB9ABC600C11052 /* LKRScorllView.swift in Sources */,
 				841C43031EAE0B96001D0C99 /* LKFunToPlayViewController.swift in Sources */,
 				84C91AE01E9E1575009AB45A /* LKNavigationController.swift in Sources */,
@@ -848,10 +858,12 @@
 				84C91AF51E9F8E4A009AB45A /* LKSegmentTitleView.swift in Sources */,
 				845971B41EB07A0600275CD2 /* LKBannerView.swift in Sources */,
 				842508861EB9E18C00C11052 /* LKHeaderView.swift in Sources */,
+				84F318151EBC7BF000239770 /* LKPlayViewController.swift in Sources */,
 				84C91AEC1E9E2581009AB45A /* Common.swift in Sources */,
 				841C42C91EADD0BF001D0C99 /* LKNetworkManger.swift in Sources */,
 				84C91AEA1E9E1734009AB45A /* LKMineViewController.swift in Sources */,
 				841C42FF1EAE0B7F001D0C99 /* LKGameViewController.swift in Sources */,
+				84F318111EBC4D6D00239770 /* LKRecommendCell.swift in Sources */,
 				841C43011EAE0B8B001D0C99 /* LKEntainmentViewController.swift in Sources */,
 				841C42FD1EAE0B74001D0C99 /* LKRecommendViewController.swift in Sources */,
 				84C91ADA1E9E0CD8009AB45A /* LKMainTabBarController.swift in Sources */,

@@ -10,9 +10,9 @@ import UIKit
 import SwiftyJSON
 
 class LKViewModel: NSObject {
-
     
-    open var data: ((_ dataArr: [LKRoomModel]) -> ())?
+    open var tableData: ((_ dataArr: [LKRoomModel]) -> ())?
+    
     
     open var requestFinish: (() -> ())?
     
@@ -34,6 +34,7 @@ extension LKViewModel {
                 
                 LKLog(json)
                 
+                
                 var tempArr = [LKRoomModel]()
                 
                 for (_ ,subJson): (String,JSON) in json!["data"] {
@@ -43,8 +44,8 @@ extension LKViewModel {
                     tempArr.append(model)
                 }
                 
-                if self.data != nil {
-                    self.data!(tempArr)
+                if self.tableData != nil {
+                    self.tableData!(tempArr)
                 }
             }
             

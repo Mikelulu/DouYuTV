@@ -26,3 +26,6 @@ let game_collectionUrl = "http://capi.douyucdn.cn/api/v1/getColumnDetail?aid=ios
 
 /// 娱乐
 let Entainment_url = "http://capi.douyucdn.cn/api/v1/getHotRoom/2?aid=ios&client_sys=ios&time=1468825800&auth=94d0ae945c16542cc6dee7fe031f1316"
+
+/// 趣玩
+let funToPlay_url = "http://capi.douyucdn.cn/api/v1/getColumnRoom/3?aid=ios&client_sys=ios&limit=20&time=1468825860&auth=4832d19a1c06d9deb24ae2449226422d"

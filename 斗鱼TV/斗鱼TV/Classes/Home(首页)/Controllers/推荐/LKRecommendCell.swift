@@ -8,7 +8,17 @@
 
 import UIKit
 
+
 class LKRecommendCell: UITableViewCell {
+    
+    
+    var rols: Int = 4 {
+        
+        didSet {
+            self.collectionView.frame = CGRect(x: kMargin, y: 0, width: kScreenW - kMargin * 2, height: kRecommendItemHeight * CGFloat(rols) + kMargin * CGFloat(rols))
+        }
+    }
+    
     
     var roomArr: [LKRoomModel]? {
         
@@ -44,7 +54,7 @@ extension LKRecommendCell {
         flowLayout.scrollDirection = .vertical
         flowLayout.itemSize = CGSize(width: kRecommendItemWith, height: kRecommendItemHeight)
         
-        collectionView = UICollectionView(frame: CGRect.init(x: kMargin, y: 0, width: kScreenW - kMargin * 2, height: kRecommendItemHeight * 4 + kMargin * 4), collectionViewLayout: flowLayout)
+        collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout)
         collectionView.backgroundColor = UIColor.white
         
         self.contentView.addSubview(collectionView)

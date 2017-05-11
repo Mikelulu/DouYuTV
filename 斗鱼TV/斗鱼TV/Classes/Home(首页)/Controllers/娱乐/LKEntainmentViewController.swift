@@ -26,7 +26,7 @@ extension LKEntainmentViewController {
     fileprivate func setUI() {
         
         self.mainView = LKEntainmentMainView(frame: self.view.bounds, viewModel: self.viewModel)
-        
+        self.mainView.backgroundColor = kBgColor
         self.view.addSubview(self.mainView)
     }
 }

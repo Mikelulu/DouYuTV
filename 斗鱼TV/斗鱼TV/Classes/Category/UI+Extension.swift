@@ -259,5 +259,27 @@ class LKRightButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+extension UIBarButtonItem {
     
+    
+    public class func item(icon: String,heightIcon: String?,target: Any,action: Selector?) -> UIBarButtonItem {
+        
+        let btn: UIButton = UIButton()
+        btn.setBackgroundImage(UIImage.init(named: icon), for: .normal)
+        
+        if (heightIcon != nil) {
+            btn.setBackgroundImage(UIImage.init(named: heightIcon!), for: .highlighted)
+        }
+        
+        btn.frame = CGRect(x: 0, y: 0, width: (btn.currentBackgroundImage?.size.width)!, height: (btn.currentBackgroundImage?.size.height)!)
+        
+        if (action != nil) {
+            
+            btn.addTarget(target, action: action!, for: .touchUpInside)
+        }
+        
+        return UIBarButtonItem(customView: btn)
+    }
 }

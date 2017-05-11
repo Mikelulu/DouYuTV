@@ -21,11 +21,46 @@ class LKHomeViewController: LKBaseViewController {
         
 //        navigationItem.title = "首页";
         
+        setNav()
         self.setUp()
     }
 }
 extension LKHomeViewController {
     
+    fileprivate func setNav() {
+    
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(icon: "logo_66x26_", heightIcon: nil, target: self, action: #selector(updateHomeData))
+        
+        
+        let itemScan: UIBarButtonItem = UIBarButtonItem.item(icon: "Image_scan_22x22_", heightIcon: "Image_scan_click_22x22_", target: self, action: #selector(scan))
+        
+        let itemMargin1 = UIBarButtonItem(customView: UIView.init(frame: CGRect.init(x: 0, y: 0, width: 10, height: 1)))
+        
+        let itemSearch: UIBarButtonItem = UIBarButtonItem.item(icon: "btn_search_22x22_", heightIcon: "btn_search_clicked_22x22_", target: self, action: #selector(search))
+        
+         let itemMargin2 = UIBarButtonItem(customView: UIView.init(frame: CGRect.init(x: 0, y: 0, width: 10, height: 1)))
+        
+        let itemHistory: UIBarButtonItem = UIBarButtonItem.item(icon: "image_my_history_26x26_", heightIcon: "Image_my_history_click_22x22_", target: self, action: #selector(history))
+        
+        self.navigationItem.rightBarButtonItems = [itemScan,itemMargin1,itemSearch,itemMargin2,itemHistory]
+    }
+    
+    @objc fileprivate func updateHomeData()  {
+        LKLog("刷新")
+    }
+    
+    @objc fileprivate func scan()  {
+        LKLog("扫一扫")
+    }
+
+    @objc fileprivate func search()  {
+        LKLog("搜索")
+    }
+
+    @objc fileprivate func history()  {
+        LKLog("历史")
+    }
+
     func setUp() {
         
         ///segmentTitleView

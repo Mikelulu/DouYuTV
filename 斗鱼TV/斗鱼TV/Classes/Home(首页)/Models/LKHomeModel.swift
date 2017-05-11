@@ -58,6 +58,8 @@ class LKRoomModel: NSObject {
     var tag_name: String
     var icon_url: String
     
+    var room_list: [JSON]
+    
     init(dic: JSON) {
         self.room_src = dic["room_src"].stringValue
         self.room_name = dic["room_name"].stringValue
@@ -68,5 +70,7 @@ class LKRoomModel: NSObject {
         
         self.tag_name = dic["tag_name"].stringValue
         self.icon_url = dic["icon_url"].stringValue
+        
+        self.room_list = dic["room_list"].arrayValue
     }
 }

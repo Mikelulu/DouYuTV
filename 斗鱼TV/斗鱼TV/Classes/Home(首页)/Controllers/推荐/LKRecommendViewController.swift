@@ -302,6 +302,8 @@ extension LKRecommendViewController: UITableViewDelegate,UITableViewDataSource {
         if cell == nil {
             cell = LKRecommendCell(style: .default, reuseIdentifier: "cellID")
         }
+        cell?.rols = 4
+        
         cell?.roomArr = self.roomArr
         
         cell?.didSeclectBlock = { [unowned self] (roomId) -> () in

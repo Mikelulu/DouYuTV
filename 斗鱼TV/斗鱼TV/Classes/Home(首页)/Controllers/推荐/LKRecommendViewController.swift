@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 
+
 let bannerViewH: CGFloat = 160
 let headerViewH: CGFloat = 260
 
@@ -24,16 +25,19 @@ class LKRecommendViewController: LKBaseViewController {
     var roomArr = [LKRoomModel]()
     
     
+    var refreshControl = UIRefreshControl()
+    
     /// tableView
     lazy var tableView: UITableView = {
         
-        let table: UITableView = UITableView(frame: CGRect.zero, style: .plain)
+        let table: UITableView = UITableView(frame: CGRect.zero, style: .grouped)
         table.separatorStyle = .none
         table.backgroundColor = kBgColor
         table.contentInset = UIEdgeInsetsMake(0, 0, -10, 0)
         table.tableHeaderView = self.headerView
         table.delegate = self
         table.dataSource = self
+        
         return table
     }()
     
@@ -64,7 +68,7 @@ class LKRecommendViewController: LKBaseViewController {
         super.viewDidLoad()
 
     
-        self.getData()
+//        self.getData()
         
         self.initRoomGroupData()
         
@@ -74,10 +78,20 @@ class LKRecommendViewController: LKBaseViewController {
             make.height.equalTo(kScreenH - 64 - 49 - 44)
         }
         
+       
+        
+        self.tableView.fan_header = FanRefreshHeaderDefault.headerRefreshing(refreshingBlock: { 
+            [weak self] in
+            
+            self?.getData()
+        })
+         self.tableView.fan_header?.fan_beginRefreshing()
+        
         self.bannerView.didSelectBlock = { [unowned self] () -> () in
             
             self.navigationController?.pushViewController(LKPlayViewController(), animated: true)
         }
+        
     }
 
 }
@@ -155,6 +169,8 @@ extension LKRecommendViewController {
      */
     
     func getData() {
+        
+        self.roomArr.removeAll()
         
         ///创建线程组
         let group: DispatchGroup = DispatchGroup()
@@ -259,6 +275,10 @@ extension LKRecommendViewController {
 //            sleep(3)
             LKLog("回到主线程刷新数据")
             
+            self.tableView.fan_header?.fan_endRefreshing()
+            
+            self.refreshControl.endRefreshing()
+            
             self.tableView.reloadData()
         }
     }
@@ -312,5 +332,13 @@ extension LKRecommendViewController: UITableViewDelegate,UITableViewDataSource {
         headView.titleString = self.roomGroups[section].groupName
         headView.imageName = self.roomGroups[section].groupImage
         return headView
+    }
+    
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+        if !refreshControl.isRefreshing {
+            self.refreshControl.attributedTitle = NSAttributedString(string: "下拉刷新数据")
+        }
     }
 }

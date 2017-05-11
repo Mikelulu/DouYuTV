@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 import Alamofire
 import SnapKit
-import ESPullToRefresh
 import SwiftyJSON
 import Kingfisher
+
+
 
 // 当前系统版本
 let kCersion = (UIDevice.current.systemVersion as NSString).floatValue

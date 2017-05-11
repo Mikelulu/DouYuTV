@@ -24,10 +24,21 @@ class LKHeaderView: UIView {
     
     var moreBtnClick: (() -> ())?
     
-    fileprivate let titleLb: UILabel = UILabel()
-    fileprivate let imageView: UIImageView = UIImageView()
-    fileprivate let moreBtn: LKRightButton = LKRightButton()
+    open let titleLb: UILabel = UILabel()
+    open let imageView: UIImageView = UIImageView()
+    open let moreBtn: LKRightButton = LKRightButton()
     
+    open var isHiddenMoreBtn = false {
+        
+        didSet {
+            
+            if isHiddenMoreBtn {
+                self.moreBtn.isHidden = true
+            }else {
+                self.moreBtn.isHidden = false
+            }
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         

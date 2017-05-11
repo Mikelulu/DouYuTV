@@ -15,43 +15,44 @@ class LKRScorllView: UIView {
         
         didSet {
             
-            for view: UIView  in self.subviews {
+            for view: UIView in self.scrollView.subviews {
                 
-                if view .isKind(of: LKButton.self) {
+                
+                if view is LKButton {
                     
                     view.removeFromSuperview()
                 }
                 
-                let leftMargin: CGFloat = 10
-                let btnMargin: CGFloat = 10
-                let btnY: CGFloat = 10
-                let btnW: CGFloat = 70
-                let btnH: CGFloat = 70
-                
-                var lastBtn: LKButton?
-                
-                for index in 0..<(btnArr?.count)! {
-                    
-                    let btn: LKButton = LKButton(frame: CGRect.zero)
-                    lastBtn = btn
-                    
-                    let model = btnArr![index]
-                    btn.frame = CGRect(x: leftMargin + ((CGFloat)(index) * (btnMargin + btnW)), y: btnY, width: btnW, height: btnH)
-                    btn.setTitle(model.tag_name, for: .normal)
-                    btn.kf.setImage(with: URL.init(string: (model.icon_url)), for: .normal)
-                    self.scrollView.addSubview(btn)
-                
-                }
-                
-                let moreBtn: LKButton = LKButton()
-                
-                moreBtn.setTitle("更多", for: .normal)
-                moreBtn.setImage(UIImage.init(named: "btn_v_more_34x34_"), for: .normal)
-                self.scrollView.addSubview(moreBtn)
-                moreBtn.frame = CGRect(x: (lastBtn?.frame.maxX)! + 10, y: btnY, width: btnW, height: btnH)
-                lastBtn = moreBtn
-                self.scrollView.contentSize = CGSize(width: (lastBtn?.frame.maxX)! + 10, height: 0)
             }
+            let leftMargin: CGFloat = 10
+            let btnMargin: CGFloat = 10
+            let btnY: CGFloat = 10
+            let btnW: CGFloat = 70
+            let btnH: CGFloat = 70
+            
+            var lastBtn: LKButton?
+            
+            for index in 0..<(btnArr?.count)! {
+                
+                let btn: LKButton = LKButton(frame: CGRect.zero)
+                lastBtn = btn
+                
+                let model = btnArr![index]
+                btn.frame = CGRect(x: leftMargin + ((CGFloat)(index) * (btnMargin + btnW)), y: btnY, width: btnW, height: btnH)
+                btn.setTitle(model.tag_name, for: .normal)
+                btn.kf.setImage(with: URL.init(string: (model.icon_url)), for: .normal)
+                self.scrollView.addSubview(btn)
+                
+            }
+            
+            let moreBtn: LKButton = LKButton()
+            
+            moreBtn.setTitle("更多", for: .normal)
+            moreBtn.setImage(UIImage.init(named: "btn_v_more_34x34_"), for: .normal)
+            self.scrollView.addSubview(moreBtn)
+            moreBtn.frame = CGRect(x: (lastBtn?.frame.maxX)! + 10, y: btnY, width: btnW, height: btnH)
+            lastBtn = moreBtn
+            self.scrollView.contentSize = CGSize(width: (lastBtn?.frame.maxX)! + 10, height: 0)
         }
     }
     

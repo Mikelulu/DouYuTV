@@ -51,6 +51,24 @@
 		84F318111EBC4D6D00239770 /* LKRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F318101EBC4D6D00239770 /* LKRecommendCell.swift */; };
 		84F318131EBC500100239770 /* LKRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F318121EBC500100239770 /* LKRCollectionViewCell.swift */; };
 		84F318151EBC7BF000239770 /* LKPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F318141EBC7BF000239770 /* LKPlayViewController.swift */; };
+		84FA51A61EC2C9260020E633 /* Bundle+FanRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51981EC2C9260020E633 /* Bundle+FanRefresh.swift */; };
+		84FA51A71EC2C9260020E633 /* FanRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84FA51991EC2C9260020E633 /* FanRefresh.bundle */; };
+		84FA51A81EC2C9260020E633 /* FanRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA519A1EC2C9260020E633 /* FanRefreshComponent.swift */; };
+		84FA51A91EC2C9260020E633 /* FanRefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA519B1EC2C9260020E633 /* FanRefreshConst.swift */; };
+		84FA51AA1EC2C9260020E633 /* FanRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA519C1EC2C9260020E633 /* FanRefreshControl.swift */; };
+		84FA51AB1EC2C9260020E633 /* FanRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA519D1EC2C9260020E633 /* FanRefreshFooter.swift */; };
+		84FA51AC1EC2C9260020E633 /* FanRefreshFooterDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA519E1EC2C9260020E633 /* FanRefreshFooterDefault.swift */; };
+		84FA51AD1EC2C9260020E633 /* FanRefreshFooterGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA519F1EC2C9260020E633 /* FanRefreshFooterGIF.swift */; };
+		84FA51AE1EC2C9260020E633 /* FanRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51A01EC2C9260020E633 /* FanRefreshHeader.swift */; };
+		84FA51AF1EC2C9260020E633 /* FanRefreshHeaderDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51A11EC2C9260020E633 /* FanRefreshHeaderDefault.swift */; };
+		84FA51B01EC2C9260020E633 /* FanRefreshHeaderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51A21EC2C9260020E633 /* FanRefreshHeaderGIF.swift */; };
+		84FA51B11EC2C9260020E633 /* UIImage+FanRefreshGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51A31EC2C9260020E633 /* UIImage+FanRefreshGIF.swift */; };
+		84FA51B21EC2C9260020E633 /* UIScrollView+FanRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51A41EC2C9260020E633 /* UIScrollView+FanRefresh.swift */; };
+		84FA51B31EC2C9260020E633 /* UIView+FanExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51A51EC2C9260020E633 /* UIView+FanExtension.swift */; };
+		84FA51B51EC2E7860020E633 /* LKGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51B41EC2E7860020E633 /* LKGameCell.swift */; };
+		84FA51B71EC303190020E633 /* LKEntainmentMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51B61EC303190020E633 /* LKEntainmentMainView.swift */; };
+		84FA51B91EC3032B0020E633 /* LKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51B81EC3032B0020E633 /* LKViewModel.swift */; };
+		84FA51BB1EC304990020E633 /* LKEntainmentScollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA51BA1EC304990020E633 /* LKEntainmentScollerView.swift */; };
 		FA56452A724C2D9AA9657879 /* Pods___TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +142,24 @@
 		84F318101EBC4D6D00239770 /* LKRecommendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKRecommendCell.swift; sourceTree = "<group>"; };
 		84F318121EBC500100239770 /* LKRCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKRCollectionViewCell.swift; sourceTree = "<group>"; };
 		84F318141EBC7BF000239770 /* LKPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPlayViewController.swift; sourceTree = "<group>"; };
+		84FA51981EC2C9260020E633 /* Bundle+FanRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+FanRefresh.swift"; sourceTree = "<group>"; };
+		84FA51991EC2C9260020E633 /* FanRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FanRefresh.bundle; sourceTree = "<group>"; };
+		84FA519A1EC2C9260020E633 /* FanRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshComponent.swift; sourceTree = "<group>"; };
+		84FA519B1EC2C9260020E633 /* FanRefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshConst.swift; sourceTree = "<group>"; };
+		84FA519C1EC2C9260020E633 /* FanRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshControl.swift; sourceTree = "<group>"; };
+		84FA519D1EC2C9260020E633 /* FanRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshFooter.swift; sourceTree = "<group>"; };
+		84FA519E1EC2C9260020E633 /* FanRefreshFooterDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshFooterDefault.swift; sourceTree = "<group>"; };
+		84FA519F1EC2C9260020E633 /* FanRefreshFooterGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshFooterGIF.swift; sourceTree = "<group>"; };
+		84FA51A01EC2C9260020E633 /* FanRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshHeader.swift; sourceTree = "<group>"; };
+		84FA51A11EC2C9260020E633 /* FanRefreshHeaderDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshHeaderDefault.swift; sourceTree = "<group>"; };
+		84FA51A21EC2C9260020E633 /* FanRefreshHeaderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanRefreshHeaderGIF.swift; sourceTree = "<group>"; };
+		84FA51A31EC2C9260020E633 /* UIImage+FanRefreshGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FanRefreshGIF.swift"; sourceTree = "<group>"; };
+		84FA51A41EC2C9260020E633 /* UIScrollView+FanRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+FanRefresh.swift"; sourceTree = "<group>"; };
+		84FA51A51EC2C9260020E633 /* UIView+FanExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FanExtension.swift"; sourceTree = "<group>"; };
+		84FA51B41EC2E7860020E633 /* LKGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKGameCell.swift; sourceTree = "<group>"; };
+		84FA51B61EC303190020E633 /* LKEntainmentMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKEntainmentMainView.swift; sourceTree = "<group>"; };
+		84FA51B81EC3032B0020E633 /* LKViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKViewModel.swift; sourceTree = "<group>"; };
+		84FA51BA1EC304990020E633 /* LKEntainmentScollerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKEntainmentScollerView.swift; sourceTree = "<group>"; };
 		FCC0E21803B801BCFC5B6FAD /* Pods-斗鱼TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				841C42FE1EAE0B7F001D0C99 /* LKGameViewController.swift */,
+				84FA51B41EC2E7860020E633 /* LKGameCell.swift */,
 			);
 			path = "游戏";
 			sourceTree = "<group>";
@@ -229,6 +266,9 @@
 			isa = PBXGroup;
 			children = (
 				841C43001EAE0B8B001D0C99 /* LKEntainmentViewController.swift */,
+				84FA51B61EC303190020E633 /* LKEntainmentMainView.swift */,
+				84FA51BA1EC304990020E633 /* LKEntainmentScollerView.swift */,
+				84FA51B81EC3032B0020E633 /* LKViewModel.swift */,
 			);
 			path = "娱乐";
 			sourceTree = "<group>";
@@ -579,6 +619,7 @@
 		84C91AD81E9E04DF009AB45A /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				84FA51971EC2C9260020E633 /* Refresh */,
 				841C42CF1EADF94E001D0C99 /* HUD */,
 			);
 			path = Libs;
@@ -625,6 +666,28 @@
 				84CCEF5F1EA6201B00296EE4 /* LKSegmentContentView.swift */,
 			);
 			path = LKSegmentView;
+			sourceTree = "<group>";
+		};
+		84FA51971EC2C9260020E633 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				84FA51981EC2C9260020E633 /* Bundle+FanRefresh.swift */,
+				84FA51991EC2C9260020E633 /* FanRefresh.bundle */,
+				84FA519A1EC2C9260020E633 /* FanRefreshComponent.swift */,
+				84FA519B1EC2C9260020E633 /* FanRefreshConst.swift */,
+				84FA519C1EC2C9260020E633 /* FanRefreshControl.swift */,
+				84FA519D1EC2C9260020E633 /* FanRefreshFooter.swift */,
+				84FA519E1EC2C9260020E633 /* FanRefreshFooterDefault.swift */,
+				84FA519F1EC2C9260020E633 /* FanRefreshFooterGIF.swift */,
+				84FA51A01EC2C9260020E633 /* FanRefreshHeader.swift */,
+				84FA51A11EC2C9260020E633 /* FanRefreshHeaderDefault.swift */,
+				84FA51A21EC2C9260020E633 /* FanRefreshHeaderGIF.swift */,
+				84FA51A31EC2C9260020E633 /* UIImage+FanRefreshGIF.swift */,
+				84FA51A41EC2C9260020E633 /* UIScrollView+FanRefresh.swift */,
+				84FA51A51EC2C9260020E633 /* UIView+FanExtension.swift */,
+			);
+			name = Refresh;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		A2A9D4D5B899D06BAF7BF745 /* Frameworks */ = {
@@ -762,6 +825,7 @@
 				841C42EA1EADF94E001D0C99 /* Warning@2x.png in Resources */,
 				841C42E31EADF94E001D0C99 /* Checkmark.png in Resources */,
 				848988991E9B282E0000A621 /* LaunchScreen.storyboard in Resources */,
+				84FA51A71EC2C9260020E633 /* FanRefresh.bundle in Resources */,
 				841C42E41EADF94E001D0C99 /* Checkmark@2x.png in Resources */,
 				841C42E81EADF94E001D0C99 /* Error@3x.png in Resources */,
 				848988961E9B282E0000A621 /* Assets.xcassets in Resources */,
@@ -842,23 +906,38 @@
 			files = (
 				841C42E11EADF94E001D0C99 /* CJSHUDHelper.swift in Sources */,
 				84C91AD71E9DDE19009AB45A /* AppDelegate.swift in Sources */,
+				84FA51B31EC2C9260020E633 /* UIView+FanExtension.swift in Sources */,
+				84FA51B51EC2E7860020E633 /* LKGameCell.swift in Sources */,
+				84FA51AF1EC2C9260020E633 /* FanRefreshHeaderDefault.swift in Sources */,
 				84C91AE41E9E1681009AB45A /* LKHomeViewController.swift in Sources */,
 				84CCEF601EA6201B00296EE4 /* LKSegmentContentView.swift in Sources */,
+				84FA51B91EC3032B0020E633 /* LKViewModel.swift in Sources */,
+				84FA51B21EC2C9260020E633 /* UIScrollView+FanRefresh.swift in Sources */,
 				84F318131EBC500100239770 /* LKRCollectionViewCell.swift in Sources */,
+				84FA51AC1EC2C9260020E633 /* FanRefreshFooterDefault.swift in Sources */,
 				842508821EB9ABC600C11052 /* LKRScorllView.swift in Sources */,
 				841C43031EAE0B96001D0C99 /* LKFunToPlayViewController.swift in Sources */,
+				84FA51AA1EC2C9260020E633 /* FanRefreshControl.swift in Sources */,
+				84FA51AB1EC2C9260020E633 /* FanRefreshFooter.swift in Sources */,
 				84C91AE01E9E1575009AB45A /* LKNavigationController.swift in Sources */,
 				841C42E21EADF94E001D0C99 /* CJSProgressHUD.swift in Sources */,
+				84FA51AE1EC2C9260020E633 /* FanRefreshHeader.swift in Sources */,
+				84FA51A91EC2C9260020E633 /* FanRefreshConst.swift in Sources */,
 				841C42E01EADF94E001D0C99 /* CJSTriangleIndicator.swift in Sources */,
 				84C91AF31E9F893C009AB45A /* UIview+LKFrame.swift in Sources */,
 				84D88BCD1EB1DB71005B0756 /* LKHomeModel.swift in Sources */,
+				84FA51B71EC303190020E633 /* LKEntainmentMainView.swift in Sources */,
+				84FA51B01EC2C9260020E633 /* FanRefreshHeaderGIF.swift in Sources */,
 				84C91AEE1E9E266D009AB45A /* UI+Extension.swift in Sources */,
 				841C42BF1EADC887001D0C99 /* API.swift in Sources */,
 				84C91AE21E9E1583009AB45A /* LKBaseViewController.swift in Sources */,
+				84FA51A81EC2C9260020E633 /* FanRefreshComponent.swift in Sources */,
 				84C91AF51E9F8E4A009AB45A /* LKSegmentTitleView.swift in Sources */,
+				84FA51AD1EC2C9260020E633 /* FanRefreshFooterGIF.swift in Sources */,
 				845971B41EB07A0600275CD2 /* LKBannerView.swift in Sources */,
 				842508861EB9E18C00C11052 /* LKHeaderView.swift in Sources */,
 				84F318151EBC7BF000239770 /* LKPlayViewController.swift in Sources */,
+				84FA51BB1EC304990020E633 /* LKEntainmentScollerView.swift in Sources */,
 				84C91AEC1E9E2581009AB45A /* Common.swift in Sources */,
 				841C42C91EADD0BF001D0C99 /* LKNetworkManger.swift in Sources */,
 				84C91AEA1E9E1734009AB45A /* LKMineViewController.swift in Sources */,
@@ -867,6 +946,8 @@
 				841C43011EAE0B8B001D0C99 /* LKEntainmentViewController.swift in Sources */,
 				841C42FD1EAE0B74001D0C99 /* LKRecommendViewController.swift in Sources */,
 				84C91ADA1E9E0CD8009AB45A /* LKMainTabBarController.swift in Sources */,
+				84FA51B11EC2C9260020E633 /* UIImage+FanRefreshGIF.swift in Sources */,
+				84FA51A61EC2C9260020E633 /* Bundle+FanRefresh.swift in Sources */,
 				84C91AE81E9E170D009AB45A /* LKFouceViewController.swift in Sources */,
 				841C42DF1EADF94E001D0C99 /* CJSAnnularIndicator.swift in Sources */,
 				84C91AE61E9E16D9009AB45A /* LKLiveViewController.swift in Sources */,

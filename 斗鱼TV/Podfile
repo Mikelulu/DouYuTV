@@ -10,7 +10,9 @@ target '斗鱼TV' do
    pod 'SnapKit'            # 约束布局
    pod 'SwiftyJSON'         #json转换
 	
-   pod "ESPullToRefresh"    # 刷新界面
+                   
+   # 刷新界面
+  
 
 
   # Pods for 斗鱼TV

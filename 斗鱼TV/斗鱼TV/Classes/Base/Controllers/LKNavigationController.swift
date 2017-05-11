@@ -31,9 +31,10 @@ class LKNavigationController: UINavigationController {
         if self.viewControllers.count > 0 {
             
             viewController.hidesBottomBarWhenPushed = true
+            
         }
+        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .plain, target: self, action: nil)
         
-       viewController.navigationItem.backBarButtonItem  = UIBarButtonItem(title: "返回", style: .plain, target: self, action: nil)
         
         
         super.pushViewController(viewController, animated: true)

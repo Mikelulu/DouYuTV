@@ -26,6 +26,7 @@ class LKBaseViewController: UIViewController {
          同时，该属性只对当前设置的控制器起作用。
         */
 //        self.edgesForExtendedLayout = .init(rawValue: 0)
+        
         view.backgroundColor = kBgColor
     }
     

@@ -119,7 +119,7 @@ extension LKSegmentContentView: UICollectionViewDelegate,UICollectionViewDataSou
         isClickBtn = false
         startOffsetX = scrollView.contentOffset.x
     }
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         if isClickBtn { return }
         

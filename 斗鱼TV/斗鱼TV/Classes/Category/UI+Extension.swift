@@ -50,9 +50,10 @@ extension UIView {
             return self.frame.origin.x
         }
         set {
-            var tempFrame = self.frame
-            tempFrame.origin.x = newValue
-            self.frame = tempFrame
+            
+            // 结构体计算属性  可以直接改变值
+            self.frame.origin.x = newValue
+            
         }
     }
     
@@ -61,9 +62,9 @@ extension UIView {
             return self.frame.origin.y
         }
         set {
-            var tempFrame = self.frame
-            tempFrame.origin.y = newValue
-            self.frame = tempFrame
+           
+            self.frame.origin.y = newValue
+            
         }
     }
     
@@ -73,9 +74,9 @@ extension UIView {
             return self.x + self.width
         }
         set{
-            var r = self.frame
-            r.origin.x = newValue - frame.size.width
-            self.frame = r
+            
+            self.frame.origin.x = newValue - frame.size.width
+            
         }
     }
     /// 下边界的y值
@@ -84,9 +85,9 @@ extension UIView {
             return self.y + self.height
         }
         set{
-            var r = self.frame
-            r.origin.y = newValue - frame.size.height
-            self.frame = r
+            
+            self.frame.origin.y = newValue - frame.size.height
+            
         }
     }
     
@@ -113,9 +114,9 @@ extension UIView {
             return self.frame.size.width
         }
         set{
-            var r = self.frame
-            r.size.width = newValue
-            self.frame = r
+            
+           self.frame.size.width = newValue
+            
         }
     }
     public var height: CGFloat{
@@ -123,9 +124,9 @@ extension UIView {
             return self.frame.size.height
         }
         set{
-            var r = self.frame
-            r.size.height = newValue
-            self.frame = r
+            
+           self.frame.size.height = newValue
+            
         }
     }
     

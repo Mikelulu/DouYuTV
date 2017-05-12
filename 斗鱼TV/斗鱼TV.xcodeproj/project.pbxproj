@@ -30,12 +30,6 @@
 		842508861EB9E18C00C11052 /* LKHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842508851EB9E18C00C11052 /* LKHeaderView.swift */; };
 		845971B41EB07A0600275CD2 /* LKBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845971B31EB07A0600275CD2 /* LKBannerView.swift */; };
 		845971B61EB07A2200275CD2 /* LKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845971B51EB07A2200275CD2 /* LKCollectionViewCell.swift */; };
-		84830E8F1EC594CB008C7136 /* SGSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830E8D1EC594CB008C7136 /* SGSegmentedControl.swift */; };
-		84830E901EC594CB008C7136 /* UIView+SGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830E8E1EC594CB008C7136 /* UIView+SGExtension.swift */; };
-		84830E921EC5A1DD008C7136 /* LKActiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830E911EC5A1DD008C7136 /* LKActiveViewController.swift */; };
-		84830E941EC5A1E8008C7136 /* LKAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830E931EC5A1E8008C7136 /* LKAllViewController.swift */; };
-		84830E961EC5A20D008C7136 /* LKLiveGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830E951EC5A20D008C7136 /* LKLiveGameViewController.swift */; };
-		84830E981EC5A216008C7136 /* LKPhoneGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84830E971EC5A216008C7136 /* LKPhoneGameViewController.swift */; };
 		848988961E9B282E0000A621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848988951E9B282E0000A621 /* Assets.xcassets */; };
 		848988991E9B282E0000A621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848988971E9B282E0000A621 /* LaunchScreen.storyboard */; };
 		848988A41E9B282E0000A621 /* __TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848988A31E9B282E0000A621 /* __TVTests.swift */; };
@@ -121,12 +115,6 @@
 		842508851EB9E18C00C11052 /* LKHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKHeaderView.swift; sourceTree = "<group>"; };
 		845971B31EB07A0600275CD2 /* LKBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBannerView.swift; sourceTree = "<group>"; };
 		845971B51EB07A2200275CD2 /* LKCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKCollectionViewCell.swift; sourceTree = "<group>"; };
-		84830E8D1EC594CB008C7136 /* SGSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGSegmentedControl.swift; sourceTree = "<group>"; };
-		84830E8E1EC594CB008C7136 /* UIView+SGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SGExtension.swift"; sourceTree = "<group>"; };
-		84830E911EC5A1DD008C7136 /* LKActiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActiveViewController.swift; sourceTree = "<group>"; };
-		84830E931EC5A1E8008C7136 /* LKAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKAllViewController.swift; sourceTree = "<group>"; };
-		84830E951EC5A20D008C7136 /* LKLiveGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLiveGameViewController.swift; sourceTree = "<group>"; };
-		84830E971EC5A216008C7136 /* LKPhoneGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPhoneGameViewController.swift; sourceTree = "<group>"; };
 		8489888B1E9B282E0000A621 /* 斗鱼TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848988951E9B282E0000A621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848988981E9B282E0000A621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -454,10 +442,6 @@
 			isa = PBXGroup;
 			children = (
 				84C91AE51E9E16D9009AB45A /* LKLiveViewController.swift */,
-				84830E911EC5A1DD008C7136 /* LKActiveViewController.swift */,
-				84830E931EC5A1E8008C7136 /* LKAllViewController.swift */,
-				84830E951EC5A20D008C7136 /* LKLiveGameViewController.swift */,
-				84830E971EC5A216008C7136 /* LKPhoneGameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -625,8 +609,6 @@
 		84C91AD61E9DDE19009AB45A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				84830E8D1EC594CB008C7136 /* SGSegmentedControl.swift */,
-				84830E8E1EC594CB008C7136 /* UIView+SGExtension.swift */,
 				841C42C51EADD066001D0C99 /* HttpTools */,
 				84C91AF11E9F887A009AB45A /* LKSegmentView */,
 				845971B21EB0794E00275CD2 /* LKBannerView */,
@@ -924,31 +906,25 @@
 			files = (
 				841C42E11EADF94E001D0C99 /* CJSHUDHelper.swift in Sources */,
 				84C91AD71E9DDE19009AB45A /* AppDelegate.swift in Sources */,
-				84830E981EC5A216008C7136 /* LKPhoneGameViewController.swift in Sources */,
 				84FA51B31EC2C9260020E633 /* UIView+FanExtension.swift in Sources */,
 				84FA51B51EC2E7860020E633 /* LKGameCell.swift in Sources */,
 				84FA51AF1EC2C9260020E633 /* FanRefreshHeaderDefault.swift in Sources */,
 				84C91AE41E9E1681009AB45A /* LKHomeViewController.swift in Sources */,
 				84CCEF601EA6201B00296EE4 /* LKSegmentContentView.swift in Sources */,
 				84FA51B91EC3032B0020E633 /* LKViewModel.swift in Sources */,
-				84830E961EC5A20D008C7136 /* LKLiveGameViewController.swift in Sources */,
 				84FA51B21EC2C9260020E633 /* UIScrollView+FanRefresh.swift in Sources */,
 				84F318131EBC500100239770 /* LKRCollectionViewCell.swift in Sources */,
 				84FA51AC1EC2C9260020E633 /* FanRefreshFooterDefault.swift in Sources */,
-				84830E941EC5A1E8008C7136 /* LKAllViewController.swift in Sources */,
 				842508821EB9ABC600C11052 /* LKRScorllView.swift in Sources */,
 				841C43031EAE0B96001D0C99 /* LKFunToPlayViewController.swift in Sources */,
 				84FA51AA1EC2C9260020E633 /* FanRefreshControl.swift in Sources */,
 				84FA51AB1EC2C9260020E633 /* FanRefreshFooter.swift in Sources */,
 				84C91AE01E9E1575009AB45A /* LKNavigationController.swift in Sources */,
-				84830E901EC594CB008C7136 /* UIView+SGExtension.swift in Sources */,
 				841C42E21EADF94E001D0C99 /* CJSProgressHUD.swift in Sources */,
 				84FA51AE1EC2C9260020E633 /* FanRefreshHeader.swift in Sources */,
 				84FA51A91EC2C9260020E633 /* FanRefreshConst.swift in Sources */,
 				841C42E01EADF94E001D0C99 /* CJSTriangleIndicator.swift in Sources */,
 				84C91AF31E9F893C009AB45A /* UIview+LKFrame.swift in Sources */,
-				84830E921EC5A1DD008C7136 /* LKActiveViewController.swift in Sources */,
-				84830E8F1EC594CB008C7136 /* SGSegmentedControl.swift in Sources */,
 				84D88BCD1EB1DB71005B0756 /* LKHomeModel.swift in Sources */,
 				84FA51B71EC303190020E633 /* LKEntainmentMainView.swift in Sources */,
 				84FA51B01EC2C9260020E633 /* FanRefreshHeaderGIF.swift in Sources */,

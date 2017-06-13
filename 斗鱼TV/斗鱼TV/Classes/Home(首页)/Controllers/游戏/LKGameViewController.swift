@@ -65,6 +65,7 @@ extension LKGameViewController {
         headeView.addSubview(self.scrollView)
         
         self.tableView.tableHeaderView = headeView
+
     }
 }
 

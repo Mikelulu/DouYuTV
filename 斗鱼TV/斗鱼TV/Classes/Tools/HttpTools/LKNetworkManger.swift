@@ -134,3 +134,30 @@ extension LKNetworkManger {
     }
 
 }
+
+extension LKNetworkManger {
+
+    fileprivate func test() {
+
+
+        /// 设置请求的URLRequest
+        let url = URL.init(string: "www.sss")
+        var urlRequest = URLRequest(url: url!)
+
+        /// 设置请求的数据编码格式
+//        let encoding = Alamofire.URLEncoding.default
+
+
+        urlRequest.httpMethod = "GET"
+
+        urlRequest.timeoutInterval = 30
+
+
+        let manger = Alamofire.SessionManager.default
+        manger.session.configuration.timeoutIntervalForRequest = 30
+
+        manger.request(urlRequest).responseJSON { (response) in
+
+        }
+    }
+}

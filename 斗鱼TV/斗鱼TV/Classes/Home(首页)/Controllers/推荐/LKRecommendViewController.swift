@@ -9,7 +9,6 @@
 import UIKit
 import SwiftyJSON
 
-
 let bannerViewH: CGFloat = 160
 let headerViewH: CGFloat = 260
 

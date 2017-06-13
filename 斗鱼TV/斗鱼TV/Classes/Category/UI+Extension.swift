@@ -43,7 +43,22 @@ extension UIView {
         layer.addSublayer(maskShapLayer)
         layer.mask = maskShapLayer
     }
-    
+
+    public func parentController() -> UIViewController? {
+
+        var responder = self.next
+
+        while (responder != nil) {
+
+            if (responder?.isKind(of: UIViewController.self))! {
+
+                return responder as? UIViewController
+            }
+            responder = responder?.next
+        }
+        return nil
+    }
+
     // MARK:- 坐标
     public var x: CGFloat {
         get {
@@ -164,6 +179,7 @@ extension UIColor {
                        
                        alpha: 1.0)
     }
+
 }
 
 // MARK: - String的分类（结构体类型）
@@ -261,6 +277,7 @@ class LKRightButton: UIButton {
     
 }
 
+// MARK: - UIBarButtonItem的分类
 extension UIBarButtonItem {
     
     
@@ -281,5 +298,102 @@ extension UIBarButtonItem {
         }
         
         return UIBarButtonItem(customView: btn)
+    }
+}
+
+// MARK: - UIImage的分类
+extension UIImage {
+
+
+    public func imageWithTintColor(_ color: UIColor) -> UIImage {
+
+        return changeImage(color, blendMode: .destinationIn)
+    }
+
+    public func imageWithGradientTintColor(_ color: UIColor) -> UIImage {
+
+        return changeImage(color, blendMode: .overlay)
+    }
+
+    private func changeImage(_ tintColor: UIColor, blendMode: CGBlendMode) -> UIImage {
+
+        /// 参数一： 绘制的大小
+        /// 参数二： 不透明 （true 为 不透明  false 为透明）
+        /// 参数三： 0
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0)
+
+        /// 颜色填充
+        tintColor.setFill()
+
+        let bounds = CGRect.init(x: 0, y: 0, width: self.size.width, height: self.size.height)
+
+        UIRectFill(bounds)
+
+
+        self.draw(in: bounds, blendMode: blendMode, alpha: 1.0)
+
+        if blendMode != .destinationIn {
+            self.draw(in: bounds, blendMode: .destinationIn, alpha: 1.0)
+        }
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+
+        return image!
+
+    }
+    /// 通过颜色生成图片
+    ///
+    /// - Parameter color: 要生成的图片颜色
+    /// - Returns:
+    public func createImageWithColor(_ color: UIColor) -> UIImage {
+
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0)
+
+        color.set()
+
+        UIRectFill(CGRect.init(x: 0, y: 0, width: self.size.width, height: self.size.height))
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+
+        UIGraphicsEndImageContext()
+
+        return image!
+    }
+
+    /// 等比压缩图片
+    ///
+    /// - Parameter width: 显示的图片的宽度
+    /// - Returns: 返回压缩后的图片
+    public func compressImage(_ width: CGFloat) -> UIImage {
+
+        /// 压缩后的高度
+        let height: CGFloat = width / self.size.width * self.size.height
+
+        let size = CGSize(width: width, height: height)
+
+        /// 开启图形上下文
+        UIGraphicsBeginImageContext(size)
+
+        /// 图片绘制到指定区域内
+        self.draw(in: CGRect.init(x: 0, y: 0, width: width, height: height))
+
+        /// 通过图形上下文获取压缩后的图片
+        let imag: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
+
+        /// 关闭图形上下文
+        UIGraphicsEndImageContext()
+
+        return imag!
+    }
+
+    /// 拉伸图片
+    ///
+    /// - Parameter imageName: 要拉伸的图片名字
+    /// - Returns: 返回拉伸后的图片
+    public class func strechImage(imageName: String) -> UIImage {
+
+        let image = UIImage.init(named: imageName)
+
+        return (image?.stretchableImage(withLeftCapWidth: Int((image?.size.width)! * 0.5), topCapHeight: Int((image?.size.height)! * 0.5)))!
     }
 }

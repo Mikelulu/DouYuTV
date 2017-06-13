@@ -37,7 +37,8 @@ class LKRecommendCell: UITableViewCell {
         self.selectionStyle = .none
         self.setUpView()
     }
-    
+
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

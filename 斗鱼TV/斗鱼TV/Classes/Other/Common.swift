@@ -12,6 +12,7 @@ import Alamofire
 import SnapKit
 import SwiftyJSON
 import Kingfisher
+import HandyJSON
 
 
 
@@ -55,6 +56,8 @@ let kBgColor = UIColor.hexInt(0xf5f5f5)
 let kSelectColor = RGB(247, 90, 0)
 
 let kNormalColor = UIColor.hexInt(0x666666)
+
+let kBlackColor = UIColor.hexInt(0x333333)
 
 
 let kMargin: CGFloat = 10

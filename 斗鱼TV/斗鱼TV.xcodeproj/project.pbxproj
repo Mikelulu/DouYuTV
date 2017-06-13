@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841074631EE5129B0053D313 /* LKItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841074621EE5129B0053D313 /* LKItemsCell.swift */; };
+		841A1BEC1ED81A33001B6844 /* LKItemsAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A1BEB1ED81A33001B6844 /* LKItemsAlertView.swift */; };
+		841A327D1EC99E520042F1FA /* LKSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A327C1EC99E520042F1FA /* LKSegmentView.swift */; };
 		841C42BF1EADC887001D0C99 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C42BE1EADC887001D0C99 /* API.swift */; };
 		841C42C91EADD0BF001D0C99 /* LKNetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C42C81EADD0BF001D0C99 /* LKNetworkManger.swift */; };
 		841C42DF1EADF94E001D0C99 /* CJSAnnularIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C42D11EADF94E001D0C99 /* CJSAnnularIndicator.swift */; };
@@ -28,8 +31,10 @@
 		841C43031EAE0B96001D0C99 /* LKFunToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C43021EAE0B96001D0C99 /* LKFunToPlayViewController.swift */; };
 		842508821EB9ABC600C11052 /* LKRScorllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842508811EB9ABC600C11052 /* LKRScorllView.swift */; };
 		842508861EB9E18C00C11052 /* LKHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842508851EB9E18C00C11052 /* LKHeaderView.swift */; };
+		845066931ED2B44800CC623B /* LKFileManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845066921ED2B44800CC623B /* LKFileManger.swift */; };
 		845971B41EB07A0600275CD2 /* LKBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845971B31EB07A0600275CD2 /* LKBannerView.swift */; };
 		845971B61EB07A2200275CD2 /* LKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845971B51EB07A2200275CD2 /* LKCollectionViewCell.swift */; };
+		8477F1951ED929650081682A /* LKCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477F1941ED929650081682A /* LKCollectionHeaderView.swift */; };
 		848988961E9B282E0000A621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848988951E9B282E0000A621 /* Assets.xcassets */; };
 		848988991E9B282E0000A621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848988971E9B282E0000A621 /* LaunchScreen.storyboard */; };
 		848988A41E9B282E0000A621 /* __TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848988A31E9B282E0000A621 /* __TVTests.swift */; };
@@ -92,6 +97,9 @@
 /* Begin PBXFileReference section */
 		0BCD19DBB6ADD444BD0A6F5B /* Pods___TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15EB3736028D06683DE239F3 /* Pods-斗鱼TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼TV/Pods-斗鱼TV.debug.xcconfig"; sourceTree = "<group>"; };
+		841074621EE5129B0053D313 /* LKItemsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKItemsCell.swift; sourceTree = "<group>"; };
+		841A1BEB1ED81A33001B6844 /* LKItemsAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKItemsAlertView.swift; sourceTree = "<group>"; };
+		841A327C1EC99E520042F1FA /* LKSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LKSegmentView.swift; path = SegmentView/LKSegmentView.swift; sourceTree = "<group>"; };
 		841C42BE1EADC887001D0C99 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		841C42C81EADD0BF001D0C99 /* LKNetworkManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LKNetworkManger.swift; path = HttpTools/LKNetworkManger.swift; sourceTree = "<group>"; };
 		841C42D11EADF94E001D0C99 /* CJSAnnularIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJSAnnularIndicator.swift; sourceTree = "<group>"; };
@@ -113,8 +121,10 @@
 		841C43021EAE0B96001D0C99 /* LKFunToPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKFunToPlayViewController.swift; sourceTree = "<group>"; };
 		842508811EB9ABC600C11052 /* LKRScorllView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKRScorllView.swift; sourceTree = "<group>"; };
 		842508851EB9E18C00C11052 /* LKHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKHeaderView.swift; sourceTree = "<group>"; };
+		845066921ED2B44800CC623B /* LKFileManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKFileManger.swift; sourceTree = "<group>"; };
 		845971B31EB07A0600275CD2 /* LKBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBannerView.swift; sourceTree = "<group>"; };
 		845971B51EB07A2200275CD2 /* LKCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKCollectionViewCell.swift; sourceTree = "<group>"; };
+		8477F1941ED929650081682A /* LKCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKCollectionHeaderView.swift; sourceTree = "<group>"; };
 		8489888B1E9B282E0000A621 /* 斗鱼TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848988951E9B282E0000A621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848988981E9B282E0000A621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -189,6 +199,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841A327E1EC99E670042F1FA /* SegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				841A327C1EC99E520042F1FA /* LKSegmentView.swift */,
+			);
+			name = SegmentView;
+			sourceTree = "<group>";
+		};
 		841C42C51EADD066001D0C99 /* HttpTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +474,10 @@
 		84C91AC21E9DDE19009AB45A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				841A327E1EC99E670042F1FA /* SegmentView */,
+				841A1BEB1ED81A33001B6844 /* LKItemsAlertView.swift */,
+				8477F1941ED929650081682A /* LKCollectionHeaderView.swift */,
+				841074621EE5129B0053D313 /* LKItemsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -612,6 +634,7 @@
 				841C42C51EADD066001D0C99 /* HttpTools */,
 				84C91AF11E9F887A009AB45A /* LKSegmentView */,
 				845971B21EB0794E00275CD2 /* LKBannerView */,
+				845066921ED2B44800CC623B /* LKFileManger.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -779,7 +802,8 @@
 				TargetAttributes = {
 					8489888A1E9B282E0000A621 = {
 						CreatedOnToolsVersion = 8.3;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 9N5X54645B;
+						ProvisioningStyle = Automatic;
 					};
 					8489889E1E9B282E0000A621 = {
 						CreatedOnToolsVersion = 8.3;
@@ -934,15 +958,18 @@
 				84FA51A81EC2C9260020E633 /* FanRefreshComponent.swift in Sources */,
 				84C91AF51E9F8E4A009AB45A /* LKSegmentTitleView.swift in Sources */,
 				84FA51AD1EC2C9260020E633 /* FanRefreshFooterGIF.swift in Sources */,
+				8477F1951ED929650081682A /* LKCollectionHeaderView.swift in Sources */,
 				845971B41EB07A0600275CD2 /* LKBannerView.swift in Sources */,
 				842508861EB9E18C00C11052 /* LKHeaderView.swift in Sources */,
 				84F318151EBC7BF000239770 /* LKPlayViewController.swift in Sources */,
 				84FA51BB1EC304990020E633 /* LKEntainmentScollerView.swift in Sources */,
+				841A327D1EC99E520042F1FA /* LKSegmentView.swift in Sources */,
 				84C91AEC1E9E2581009AB45A /* Common.swift in Sources */,
 				841C42C91EADD0BF001D0C99 /* LKNetworkManger.swift in Sources */,
 				84C91AEA1E9E1734009AB45A /* LKMineViewController.swift in Sources */,
 				841C42FF1EAE0B7F001D0C99 /* LKGameViewController.swift in Sources */,
 				84F318111EBC4D6D00239770 /* LKRecommendCell.swift in Sources */,
+				845066931ED2B44800CC623B /* LKFileManger.swift in Sources */,
 				841C43011EAE0B8B001D0C99 /* LKEntainmentViewController.swift in Sources */,
 				841C42FD1EAE0B74001D0C99 /* LKRecommendViewController.swift in Sources */,
 				84C91ADA1E9E0CD8009AB45A /* LKMainTabBarController.swift in Sources */,
@@ -950,8 +977,10 @@
 				84FA51A61EC2C9260020E633 /* Bundle+FanRefresh.swift in Sources */,
 				84C91AE81E9E170D009AB45A /* LKFouceViewController.swift in Sources */,
 				841C42DF1EADF94E001D0C99 /* CJSAnnularIndicator.swift in Sources */,
+				841074631EE5129B0053D313 /* LKItemsCell.swift in Sources */,
 				84C91AE61E9E16D9009AB45A /* LKLiveViewController.swift in Sources */,
 				845971B61EB07A2200275CD2 /* LKCollectionViewCell.swift in Sources */,
+				841A1BEC1ED81A33001B6844 /* LKItemsAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,7 +1126,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5X54645B;
 				INFOPLIST_FILE = "斗鱼TV/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1114,7 +1145,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5X54645B;
 				INFOPLIST_FILE = "斗鱼TV/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -34,6 +34,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = LKMainTabBarController()
         
         window?.makeKeyAndVisible()
+
+
+        let hostList: [String] = ["头条","娱乐","热点","体育","泉州","网易号","财经","科技","汽车","时尚","图片","跟贴","房产","直播","轻松一刻","段子","军事","历史","家居","独家","游戏","健康","政务","哒哒趣闻","美女","NBA","社会","彩票"]
+
+        let addList: [String] = ["漫画","影视歌","中国足球","国际足球","CBA","跑步","手机","数码","移动互联","云课堂","态度公开课","旅游","读书","酒香","教育","亲子","暴雪游戏","情感","艺术","博客","论坛","型男","萌宠"]
+
+        /// 测试创建文件夹
+//        LKFileManger.sharedInstance.createDirectory("test");
+
+        // 获取路径
+        let hostListFilePath = LKFileManger.sharedInstance.createFile("hostList.txt")
+
+        let addListFilePath = LKFileManger.sharedInstance.createFile("addList.txt")
+
+        // 将数组写入文件
+        _ = LKFileManger.sharedInstance.writeFile(hostList as AnyObject, hostListFilePath)
+
+        _ = LKFileManger.sharedInstance.writeFile(addList as AnyObject, addListFilePath)
+
+
+//         LKLog(LKFileManger.sharedInstance.readFileContent(hostListFilePath))
+//
+//         LKLog(LKFileManger.sharedInstance.readFileContent(addListFilePath))
+
     }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

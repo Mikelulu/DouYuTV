@@ -9,7 +9,7 @@ target '斗鱼TV' do
    pod 'Kingfisher'         # 图片加载
    pod 'SnapKit'            # 约束布局
    pod 'SwiftyJSON'         #json转换
-	
+   pod 'HandyJSON', '~> 1.7.1' 	
                    
    # 刷新界面
   
